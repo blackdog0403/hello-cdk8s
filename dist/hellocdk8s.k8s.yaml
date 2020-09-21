@@ -13,7 +13,7 @@ spec:
         app: hellocdk8spodinfo3130C0401
     spec:
       containers:
-        - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo
+        - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:latest
           imagePullPolicy: Always
           name: app
           ports:
@@ -32,7 +32,7 @@ metadata:
   name: hello-cdk8s-podinfo3-deployment-hpa-fe2fcb3e
   namespace: default
 spec:
-  maxReplicas: 40
+  maxReplicas: 20
   metrics:
     - resource:
         name: cpu
@@ -46,7 +46,7 @@ spec:
           averageUtilization: 75
           type: Utilization
       type: Resource
-  minReplicas: 4
+  minReplicas: 2
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment

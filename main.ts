@@ -13,13 +13,12 @@ export class MyChart extends Chart {
     super(scope, name);
 
     new DeboredApp(this, 'podinfo3', {
-      image: '245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo',
+      image: '245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:latest',
       containerPort: 9898,
       namespace: 'default',
-      defaultReplicas: 4,
+      defaultReplicas: 2,
       ingress: IngressType.CLUSTER_IP,
       autoScale: true,
-    
     });
     // new Jenkins(this, 'jenkins',{
     //   spec: {
