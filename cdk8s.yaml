@@ -1,0 +1,5 @@
+language: typescript
+app: node main.js
+imports:
+  - k8s@1.16.0
+  - https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/deploy/crds/jenkins.io_jenkins_crd.yaml
