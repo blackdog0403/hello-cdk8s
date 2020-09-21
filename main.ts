@@ -13,7 +13,7 @@ export class MyChart extends Chart {
     super(scope, name);
 
     new DeboredApp(this, 'podinfo3', {
-      image: 'stefanprodan/podinfo',
+      image: '245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo',
       containerPort: 9898,
       namespace: 'default',
       defaultReplicas: 4,
