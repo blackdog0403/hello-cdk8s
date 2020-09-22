@@ -1,6 +1,6 @@
 import { Construct } from 'constructs';
 import { App, Chart } from 'cdk8s';
-import { DeboredApp, IngressType } from 'cdk8s-debore';
+import { DeboredApp, IngressType } from './lib/DeboreExtended';
 
 // import { ConfigMap, LimitRangeList, Pod, Service, ServiceAccount } from './imports/k8s';
 // import { Pod } from './imports/k8s';
@@ -19,6 +19,9 @@ export class MyChart extends Chart {
       defaultReplicas: 2,
       ingress: IngressType.CLUSTER_IP,
       autoScale: true,
+      annotations: { 
+        'flux.weave.works/automated' : 'true'
+      }
     });
     // new Jenkins(this, 'jenkins',{
     //   spec: {
