@@ -15,7 +15,7 @@ spec:
         app: hellocdk8spodinfo3130C0401
     spec:
       containers:
-        - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:d1439115
+        - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:93f85566
           imagePullPolicy: Always
           name: app
           ports:
