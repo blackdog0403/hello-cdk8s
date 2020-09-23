@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    flux.weave.works/automated: "true"
+    flux.weave.works/ignore: "true"
   name: hello-cdk8s-podinfo3-deployment-5ad0dcdd
   namespace: default
 spec:

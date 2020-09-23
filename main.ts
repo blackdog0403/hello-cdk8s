@@ -21,7 +21,8 @@ export class MyChart extends Chart {
       ingress: IngressType.CLUSTER_IP,
       autoScale: true,
       annotations: { 
-        'flux.weave.works/automated' : 'true'
+        // 'flux.weave.works/automated' : 'true',
+        'flux.weave.works/ignore'    : 'true'
       }
     });
 
