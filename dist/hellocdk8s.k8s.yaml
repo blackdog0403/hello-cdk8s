@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,18 +16,18 @@ spec:
         app: hellocdk8spodinfo3130C0401
     spec:
       containers:
-        - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:d1439115
-          imagePullPolicy: Always
-          name: app
-          ports:
-            - containerPort: 9898
-          resources:
-            limits:
-              cpu: 400m
-              memory: 512Mi
-            requests:
-              cpu: 200m
-              memory: 256Mi
+      - image: 245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:93f85566
+        imagePullPolicy: Always
+        name: app
+        ports:
+        - containerPort: 9898
+        resources:
+          limits:
+            cpu: 400m
+            memory: 512Mi
+          requests:
+            cpu: 200m
+            memory: 256Mi
 ---
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
@@ -36,18 +37,18 @@ metadata:
 spec:
   maxReplicas: 20
   metrics:
-    - resource:
-        name: cpu
-        target:
-          averageUtilization: 85
-          type: Utilization
-      type: Resource
-    - resource:
-        name: memory
-        target:
-          averageUtilization: 75
-          type: Utilization
-      type: Resource
+  - resource:
+      name: cpu
+      target:
+        averageUtilization: 85
+        type: Utilization
+    type: Resource
+  - resource:
+      name: memory
+      target:
+        averageUtilization: 75
+        type: Utilization
+    type: Resource
   minReplicas: 2
   scaleTargetRef:
     apiVersion: apps/v1
@@ -61,8 +62,8 @@ metadata:
   namespace: default
 spec:
   ports:
-    - port: 80
-      targetPort: 9898
+  - port: 80
+    targetPort: 9898
   selector:
     app: hellocdk8spodinfo3130C0401
   type: ClusterIP
