@@ -3,3 +3,5 @@ app: node main.js
 imports:
   - k8s@1.16.0
   - https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/deploy/crds/jenkins.io_jenkins_crd.yaml
+
+# cdk8s import k8s --language typescript --include io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler
