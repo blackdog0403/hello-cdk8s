@@ -1,6 +1,8 @@
 import { Construct } from 'constructs';
 import { App, Chart } from 'cdk8s';
 import { DeboredApp, IngressType } from './lib/DeboreExtended';
+import { HelmRelease, HelmReleaseSpecHelmVersion } from './imports/helm.fluxcd.io/helmrelease';
+import { version } from 'os';
 
 // import { ConfigMap, LimitRangeList, Pod, Service, ServiceAccount } from './imports/k8s';
 // import { Pod } from './imports/k8s';
@@ -21,6 +23,22 @@ export class MyChart extends Chart {
       autoScale: true,
       annotations: { 
         'flux.weave.works/automated' : 'true'
+      }
+    });
+    new HelmRelease(this, 'nginx', {
+      metadata: {
+        name: 'nginx',
+        namespace: 'nginx'
+      },
+      spec: {
+        chart: {
+          repository: 'https://charts.bitnami.com/bitnami',
+          name: 'nginx',
+          version: '5.6.1'
+        },
+        helmVersion: HelmReleaseSpecHelmVersion.V3,
+        releaseName: 'mynginx'
+         
       }
     });
     // new Jenkins(this, 'jenkins',{
