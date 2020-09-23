@@ -58,6 +58,7 @@ export interface DeboredOptions {
    * Annotations for Deployment metadata
    */
   readonly annotations?: { [key: string]: string }
+  
 }
 
 export enum IngressType {
