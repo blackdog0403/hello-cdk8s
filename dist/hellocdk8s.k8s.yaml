@@ -4,8 +4,6 @@ kind: Deployment
 metadata:
   annotations:
     flux.weave.works/ignore: "true"
-    fluxcd.io/locked_user: Kwangyoung Kim <blackdog0403@gmail.com>
-    fluxcd.io/locked: 'true'
   name: hello-cdk8s-podinfo3-deployment-5ad0dcdd
   namespace: default
 spec:
