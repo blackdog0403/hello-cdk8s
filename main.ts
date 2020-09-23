@@ -2,7 +2,6 @@ import { Construct } from 'constructs';
 import { App, Chart } from 'cdk8s';
 import { DeboredApp, IngressType } from './lib/DeboreExtended';
 import { HelmRelease, HelmReleaseSpecHelmVersion } from './imports/helm.fluxcd.io/helmrelease';
-import { version } from 'os';
 
 // import { ConfigMap, LimitRangeList, Pod, Service, ServiceAccount } from './imports/k8s';
 // import { Pod } from './imports/k8s';
