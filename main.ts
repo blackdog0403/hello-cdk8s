@@ -17,7 +17,7 @@ export class MyChart extends Chart {
       image: '245775375184.dkr.ecr.ap-northeast-1.amazonaws.com/cdk8s-demo-podinfo:93f85566',
       containerPort: 9898,
       namespace: 'default',
-      defaultReplicas: 2,
+      defaultReplicas: 4,
       ingress: IngressType.CLUSTER_IP,
       autoScale: true,
       annotations: { 
