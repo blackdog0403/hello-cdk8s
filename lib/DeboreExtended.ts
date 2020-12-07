@@ -143,7 +143,7 @@ class DeboredDeployment extends Construct {
     };
     const annotations = opts.annotations;
 
-    const deploymentOpts: k8s.DeploymentOptions = {
+    const deploymentOpts: k8s.KubeDeploymentProps = {
       metadata: {
         namespace: namespace,
         annotations: annotations
@@ -166,11 +166,11 @@ class DeboredDeployment extends Construct {
       },
     };
     
-    const deployment = new k8s.Deployment(this, 'deployment', deploymentOpts);
+    const deployment = new k8s.KubeDeployment(this, 'deployment', deploymentOpts);
     this.name = deployment.name;
     
     if (scalable) { 
-      new k8s.HorizontalPodAutoscaler(this, 'hpa', {
+      new k8s.KubeHorizontalPodAutoscaler(this, 'hpa', {
         metadata: {
           namespace: namespace,
         },
@@ -221,7 +221,7 @@ class Exposable extends Construct {
   constructor(scope: Construct, name: string, opts: ExposableOptions) {
     super(scope, name);
 
-    const svc = new k8s.Service(this, 'service', {
+    const svc = new k8s.KubeService(this, 'service', {
       metadata: {
         namespace: opts.deployment.namespace,
       },
@@ -233,7 +233,7 @@ class Exposable extends Construct {
     });
     // Add a Kubernetes Ingress resource if it's needed
     if (opts.ingressType == IngressType.NGINX_INGRESS) {
-      new k8s.Ingress(this, 'ingress', {
+      new k8s.KubeIngressV1Beta1(this, 'ingress', {
         metadata: {
           namespace: opts.deployment.namespace,
           annotations: {

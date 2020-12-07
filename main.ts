@@ -6,7 +6,7 @@ import { DeboredApp, IngressType } from './lib/DeboreExtended';
 // import { ConfigMap, LimitRangeList, Pod, Service, ServiceAccount } from './imports/k8s';
 // import { Pod } from './imports/k8s';
 // import { Jenkins } from './imports/jenkins.io/jenkins';
-// import { Deployment, Service } from './imports/k8s';
+// import { KubePod } from './imports/k8s';
 
 export class MyChart extends Chart {
   constructor(scope: Construct, name: string) {
@@ -72,7 +72,7 @@ export class MyChart extends Chart {
 
 
     // define resources here
-    // new Deployment(this, 'deployment', {
+    // new KubeDeployment(this, 'deployment', {
     //   spec: {
     //     selector: {
     //       matchLabels: label
@@ -102,7 +102,7 @@ export class MyChart extends Chart {
     //     }
     //   }
     // });
-    // new Pod(this, 'podinfo', {
+    // new KubePod(this, 'podinfo', {
     //   spec: {
     //     containers: [
     //       {
@@ -121,6 +121,12 @@ export class MyChart extends Chart {
     //     ]
     //   }
     // }); 
+
+
+    
+
+
+    
   } 
 }
 

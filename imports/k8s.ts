@@ -7,16 +7,16 @@ import { Construct } from 'constructs';
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfiguration
  */
-export class MutatingWebhookConfiguration extends ApiObject {
+export class KubeMutatingWebhookConfigurationV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfiguration" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: MutatingWebhookConfigurationOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeMutatingWebhookConfigurationV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'MutatingWebhookConfiguration',
       apiVersion: 'admissionregistration.k8s.io/v1beta1',
     });
@@ -28,16 +28,16 @@ export class MutatingWebhookConfiguration extends ApiObject {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfigurationList
  */
-export class MutatingWebhookConfigurationList extends ApiObject {
+export class KubeMutatingWebhookConfigurationListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfigurationList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: MutatingWebhookConfigurationListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeMutatingWebhookConfigurationListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'MutatingWebhookConfigurationList',
       apiVersion: 'admissionregistration.k8s.io/v1beta1',
     });
@@ -49,16 +49,16 @@ export class MutatingWebhookConfigurationList extends ApiObject {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfiguration
  */
-export class ValidatingWebhookConfiguration extends ApiObject {
+export class KubeValidatingWebhookConfigurationV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfiguration" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ValidatingWebhookConfigurationOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeValidatingWebhookConfigurationV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ValidatingWebhookConfiguration',
       apiVersion: 'admissionregistration.k8s.io/v1beta1',
     });
@@ -70,16 +70,16 @@ export class ValidatingWebhookConfiguration extends ApiObject {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList
  */
-export class ValidatingWebhookConfigurationList extends ApiObject {
+export class KubeValidatingWebhookConfigurationListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ValidatingWebhookConfigurationListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeValidatingWebhookConfigurationListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'ValidatingWebhookConfigurationList',
       apiVersion: 'admissionregistration.k8s.io/v1beta1',
     });
@@ -91,16 +91,16 @@ export class ValidatingWebhookConfigurationList extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.ControllerRevision
  */
-export class ControllerRevision extends ApiObject {
+export class KubeControllerRevision extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.ControllerRevision" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ControllerRevisionOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ControllerRevision',
       apiVersion: 'apps/v1',
     });
@@ -112,16 +112,16 @@ export class ControllerRevision extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.ControllerRevisionList
  */
-export class ControllerRevisionList extends ApiObject {
+export class KubeControllerRevisionList extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.ControllerRevisionList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ControllerRevisionListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ControllerRevisionList',
       apiVersion: 'apps/v1',
     });
@@ -133,16 +133,16 @@ export class ControllerRevisionList extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.DaemonSet
  */
-export class DaemonSet extends ApiObject {
+export class KubeDaemonSet extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.DaemonSet" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: DaemonSetOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'DaemonSet',
       apiVersion: 'apps/v1',
     });
@@ -154,16 +154,16 @@ export class DaemonSet extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.DaemonSetList
  */
-export class DaemonSetList extends ApiObject {
+export class KubeDaemonSetList extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.DaemonSetList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: DaemonSetListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'DaemonSetList',
       apiVersion: 'apps/v1',
     });
@@ -175,16 +175,16 @@ export class DaemonSetList extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.Deployment
  */
-export class Deployment extends ApiObject {
+export class KubeDeployment extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.Deployment" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: DeploymentOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeDeploymentProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Deployment',
       apiVersion: 'apps/v1',
     });
@@ -196,16 +196,16 @@ export class Deployment extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.DeploymentList
  */
-export class DeploymentList extends ApiObject {
+export class KubeDeploymentList extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.DeploymentList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: DeploymentListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeDeploymentListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'DeploymentList',
       apiVersion: 'apps/v1',
     });
@@ -217,16 +217,16 @@ export class DeploymentList extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.ReplicaSet
  */
-export class ReplicaSet extends ApiObject {
+export class KubeReplicaSet extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.ReplicaSet" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ReplicaSetOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ReplicaSet',
       apiVersion: 'apps/v1',
     });
@@ -238,16 +238,16 @@ export class ReplicaSet extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.ReplicaSetList
  */
-export class ReplicaSetList extends ApiObject {
+export class KubeReplicaSetList extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.ReplicaSetList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ReplicaSetListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ReplicaSetList',
       apiVersion: 'apps/v1',
     });
@@ -262,16 +262,16 @@ The StatefulSet guarantees that a given network identity will always map to the 
  *
  * @schema io.k8s.api.apps.v1.StatefulSet
  */
-export class StatefulSet extends ApiObject {
+export class KubeStatefulSet extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.StatefulSet" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: StatefulSetOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'StatefulSet',
       apiVersion: 'apps/v1',
     });
@@ -283,16 +283,16 @@ export class StatefulSet extends ApiObject {
  *
  * @schema io.k8s.api.apps.v1.StatefulSetList
  */
-export class StatefulSetList extends ApiObject {
+export class KubeStatefulSetList extends ApiObject {
   /**
    * Defines a "io.k8s.api.apps.v1.StatefulSetList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: StatefulSetListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'StatefulSetList',
       apiVersion: 'apps/v1',
     });
@@ -300,22 +300,385 @@ export class StatefulSetList extends ApiObject {
 }
 
 /**
+ * DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1beta2/ControllerRevision. See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
+ *
+ * @schema io.k8s.api.apps.v1beta1.ControllerRevision
+ */
+export class KubeControllerRevisionV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta1.ControllerRevision" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ControllerRevision',
+      apiVersion: 'apps/v1beta1',
+    });
+  }
+}
+
+/**
+ * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
+ *
+ * @schema io.k8s.api.apps.v1beta1.ControllerRevisionList
+ */
+export class KubeControllerRevisionListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta1.ControllerRevisionList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ControllerRevisionList',
+      apiVersion: 'apps/v1beta1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Deployment. See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.Deployment
+ */
+export class KubeDeploymentV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.Deployment" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDeploymentV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Deployment',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * DeploymentList is a list of Deployments.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DeploymentList
+ */
+export class KubeDeploymentListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.DeploymentList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDeploymentListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'DeploymentList',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * represents a scaling request for a resource.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.Scale
+ */
+export class KubeScaleV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.Scale" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeScaleV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Scale',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1beta2/StatefulSet. See the release notes for more information. StatefulSet represents a set of pods with consistent identities. Identities are defined as:
+ - Network: A single stable DNS and hostname.
+ - Storage: As many VolumeClaims as requested.
+The StatefulSet guarantees that a given network identity will always map to the same storage identity.
+ *
+ * @schema io.k8s.api.apps.v1beta1.StatefulSet
+ */
+export class KubeStatefulSetV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta1.StatefulSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'StatefulSet',
+      apiVersion: 'apps/v1beta1',
+    });
+  }
+}
+
+/**
+ * StatefulSetList is a collection of StatefulSets.
+ *
+ * @schema io.k8s.api.apps.v1beta1.StatefulSetList
+ */
+export class KubeStatefulSetListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta1.StatefulSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'StatefulSetList',
+      apiVersion: 'apps/v1beta1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1/ControllerRevision. See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ControllerRevision
+ */
+export class KubeControllerRevisionV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.ControllerRevision" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ControllerRevision',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ControllerRevisionList
+ */
+export class KubeControllerRevisionListV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.ControllerRevisionList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeControllerRevisionListV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ControllerRevisionList',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet. See the release notes for more information. DaemonSet represents the configuration of a daemon set.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DaemonSet
+ */
+export class KubeDaemonSetV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.DaemonSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetV1Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'DaemonSet',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DaemonSetList is a collection of daemon sets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DaemonSetList
+ */
+export class KubeDaemonSetListV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.DaemonSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetListV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'DaemonSetList',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of Deployment is deprecated by apps/v1/Deployment. See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.Deployment
+ */
+export class KubeDeploymentV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.Deployment" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDeploymentV1Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Deployment',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DeploymentList is a list of Deployments.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DeploymentList
+ */
+export class KubeDeploymentListV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.DeploymentList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDeploymentListV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'DeploymentList',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1/ReplicaSet. See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ReplicaSet
+ */
+export class KubeReplicaSetV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.ReplicaSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetV1Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'ReplicaSet',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * ReplicaSetList is a collection of ReplicaSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ReplicaSetList
+ */
+export class KubeReplicaSetListV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.ReplicaSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetListV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ReplicaSetList',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
  * Scale represents a scaling request for a resource.
  *
- * @schema io.k8s.api.autoscaling.v1.Scale
+ * @schema io.k8s.api.apps.v1beta2.Scale
  */
-export class Scale extends ApiObject {
+export class KubeScaleV1Beta2 extends ApiObject {
   /**
-   * Defines a "io.k8s.api.autoscaling.v1.Scale" API object
+   * Defines a "io.k8s.api.apps.v1beta2.Scale" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ScaleOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeScaleV1Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Scale',
-      apiVersion: 'autoscaling/v1',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1/StatefulSet. See the release notes for more information. StatefulSet represents a set of pods with consistent identities. Identities are defined as:
+ - Network: A single stable DNS and hostname.
+ - Storage: As many VolumeClaims as requested.
+The StatefulSet guarantees that a given network identity will always map to the same storage identity.
+ *
+ * @schema io.k8s.api.apps.v1beta2.StatefulSet
+ */
+export class KubeStatefulSetV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.StatefulSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetV1Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'StatefulSet',
+      apiVersion: 'apps/v1beta2',
+    });
+  }
+}
+
+/**
+ * StatefulSetList is a collection of StatefulSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.StatefulSetList
+ */
+export class KubeStatefulSetListV1Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.apps.v1beta2.StatefulSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStatefulSetListV1Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'StatefulSetList',
+      apiVersion: 'apps/v1beta2',
     });
   }
 }
@@ -325,16 +688,16 @@ export class Scale extends ApiObject {
  *
  * @schema io.k8s.api.auditregistration.v1alpha1.AuditSink
  */
-export class AuditSink extends ApiObject {
+export class KubeAuditSinkV1Alpha1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.auditregistration.v1alpha1.AuditSink" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: AuditSinkOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeAuditSinkV1Alpha1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'AuditSink',
       apiVersion: 'auditregistration.k8s.io/v1alpha1',
     });
@@ -346,16 +709,16 @@ export class AuditSink extends ApiObject {
  *
  * @schema io.k8s.api.auditregistration.v1alpha1.AuditSinkList
  */
-export class AuditSinkList extends ApiObject {
+export class KubeAuditSinkListV1Alpha1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.auditregistration.v1alpha1.AuditSinkList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: AuditSinkListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeAuditSinkListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'AuditSinkList',
       apiVersion: 'auditregistration.k8s.io/v1alpha1',
     });
@@ -367,18 +730,39 @@ export class AuditSinkList extends ApiObject {
  *
  * @schema io.k8s.api.authentication.v1.TokenReview
  */
-export class TokenReview extends ApiObject {
+export class KubeTokenReview extends ApiObject {
   /**
    * Defines a "io.k8s.api.authentication.v1.TokenReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: TokenReviewOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeTokenReviewProps) {
+    super(scope, id, {
+      ...props,
       kind: 'TokenReview',
       apiVersion: 'authentication.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.
+ *
+ * @schema io.k8s.api.authentication.v1beta1.TokenReview
+ */
+export class KubeTokenReviewV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.authentication.v1beta1.TokenReview" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeTokenReviewV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'TokenReview',
+      apiVersion: 'authentication.k8s.io/v1beta1',
     });
   }
 }
@@ -388,16 +772,16 @@ export class TokenReview extends ApiObject {
  *
  * @schema io.k8s.api.authorization.v1.LocalSubjectAccessReview
  */
-export class LocalSubjectAccessReview extends ApiObject {
+export class KubeLocalSubjectAccessReview extends ApiObject {
   /**
    * Defines a "io.k8s.api.authorization.v1.LocalSubjectAccessReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: LocalSubjectAccessReviewOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLocalSubjectAccessReviewProps) {
+    super(scope, id, {
+      ...props,
       kind: 'LocalSubjectAccessReview',
       apiVersion: 'authorization.k8s.io/v1',
     });
@@ -409,16 +793,16 @@ export class LocalSubjectAccessReview extends ApiObject {
  *
  * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReview
  */
-export class SelfSubjectAccessReview extends ApiObject {
+export class KubeSelfSubjectAccessReview extends ApiObject {
   /**
    * Defines a "io.k8s.api.authorization.v1.SelfSubjectAccessReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: SelfSubjectAccessReviewOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeSelfSubjectAccessReviewProps) {
+    super(scope, id, {
+      ...props,
       kind: 'SelfSubjectAccessReview',
       apiVersion: 'authorization.k8s.io/v1',
     });
@@ -430,16 +814,16 @@ export class SelfSubjectAccessReview extends ApiObject {
  *
  * @schema io.k8s.api.authorization.v1.SelfSubjectRulesReview
  */
-export class SelfSubjectRulesReview extends ApiObject {
+export class KubeSelfSubjectRulesReview extends ApiObject {
   /**
    * Defines a "io.k8s.api.authorization.v1.SelfSubjectRulesReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: SelfSubjectRulesReviewOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeSelfSubjectRulesReviewProps) {
+    super(scope, id, {
+      ...props,
       kind: 'SelfSubjectRulesReview',
       apiVersion: 'authorization.k8s.io/v1',
     });
@@ -451,16 +835,16 @@ export class SelfSubjectRulesReview extends ApiObject {
  *
  * @schema io.k8s.api.authorization.v1.SubjectAccessReview
  */
-export class SubjectAccessReview extends ApiObject {
+export class KubeSubjectAccessReview extends ApiObject {
   /**
    * Defines a "io.k8s.api.authorization.v1.SubjectAccessReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: SubjectAccessReviewOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeSubjectAccessReviewProps) {
+    super(scope, id, {
+      ...props,
       kind: 'SubjectAccessReview',
       apiVersion: 'authorization.k8s.io/v1',
     });
@@ -468,22 +852,106 @@ export class SubjectAccessReview extends ApiObject {
 }
 
 /**
- * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
+ * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a given namespace. Having a namespace scoped resource makes it much easier to grant namespace scoped policy that includes permissions checking.
  *
- * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler
+ * @schema io.k8s.api.authorization.v1beta1.LocalSubjectAccessReview
  */
-export class HorizontalPodAutoscaler extends ApiObject {
+export class KubeLocalSubjectAccessReviewV1Beta1 extends ApiObject {
   /**
-   * Defines a "io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler" API object
+   * Defines a "io.k8s.api.authorization.v1beta1.LocalSubjectAccessReview" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: HorizontalPodAutoscalerOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLocalSubjectAccessReviewV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'LocalSubjectAccessReview',
+      apiVersion: 'authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not filling in a spec.namespace means "in all namespaces".  Self is a special case, because users should always be able to check whether they can perform an action
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReview
+ */
+export class KubeSelfSubjectAccessReviewV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.authorization.v1beta1.SelfSubjectAccessReview" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeSelfSubjectAccessReviewV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'SelfSubjectAccessReview',
+      apiVersion: 'authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a namespace. The returned list of actions may be incomplete depending on the server's authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview should be used by UIs to show/hide actions, or to quickly let an end user reason about their permissions. It should NOT Be used by external systems to drive authorization decisions as this raises confused deputy, cache lifetime/revocation, and correctness concerns. SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization decisions to the API server.
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReview
+ */
+export class KubeSelfSubjectRulesReviewV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.authorization.v1beta1.SelfSubjectRulesReview" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeSelfSubjectRulesReviewV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'SelfSubjectRulesReview',
+      apiVersion: 'authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * SubjectAccessReview checks whether or not a user or group can perform an action.
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReview
+ */
+export class KubeSubjectAccessReviewV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.authorization.v1beta1.SubjectAccessReview" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeSubjectAccessReviewV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'SubjectAccessReview',
+      apiVersion: 'authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * configuration of a horizontal pod autoscaler.
+ *
+ * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler
+ */
+export class KubeHorizontalPodAutoscaler extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'HorizontalPodAutoscaler',
-      apiVersion: 'autoscaling/v2beta2',
+      apiVersion: 'autoscaling/v1',
     });
   }
 }
@@ -493,18 +961,123 @@ export class HorizontalPodAutoscaler extends ApiObject {
  *
  * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList
  */
-export class HorizontalPodAutoscalerList extends ApiObject {
+export class KubeHorizontalPodAutoscalerList extends ApiObject {
   /**
    * Defines a "io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: HorizontalPodAutoscalerListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'HorizontalPodAutoscalerList',
       apiVersion: 'autoscaling/v1',
+    });
+  }
+}
+
+/**
+ * Scale represents a scaling request for a resource.
+ *
+ * @schema io.k8s.api.autoscaling.v1.Scale
+ */
+export class KubeScale extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v1.Scale" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeScaleProps = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Scale',
+      apiVersion: 'autoscaling/v1',
+    });
+  }
+}
+
+/**
+ * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscaler
+ */
+export class KubeHorizontalPodAutoscalerV2Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscaler" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerV2Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'HorizontalPodAutoscaler',
+      apiVersion: 'autoscaling/v2beta1',
+    });
+  }
+}
+
+/**
+ * HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscalerList
+ */
+export class KubeHorizontalPodAutoscalerListV2Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscalerList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerListV2Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'HorizontalPodAutoscalerList',
+      apiVersion: 'autoscaling/v2beta1',
+    });
+  }
+}
+
+/**
+ * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler
+ */
+export class KubeHorizontalPodAutoscalerV2Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerV2Beta2Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'HorizontalPodAutoscaler',
+      apiVersion: 'autoscaling/v2beta2',
+    });
+  }
+}
+
+/**
+ * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerList
+ */
+export class KubeHorizontalPodAutoscalerListV2Beta2 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeHorizontalPodAutoscalerListV2Beta2Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'HorizontalPodAutoscalerList',
+      apiVersion: 'autoscaling/v2beta2',
     });
   }
 }
@@ -514,16 +1087,16 @@ export class HorizontalPodAutoscalerList extends ApiObject {
  *
  * @schema io.k8s.api.batch.v1.Job
  */
-export class Job extends ApiObject {
+export class KubeJob extends ApiObject {
   /**
    * Defines a "io.k8s.api.batch.v1.Job" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: JobOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeJobProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Job',
       apiVersion: 'batch/v1',
     });
@@ -535,16 +1108,16 @@ export class Job extends ApiObject {
  *
  * @schema io.k8s.api.batch.v1.JobList
  */
-export class JobList extends ApiObject {
+export class KubeJobList extends ApiObject {
   /**
    * Defines a "io.k8s.api.batch.v1.JobList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: JobListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeJobListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'JobList',
       apiVersion: 'batch/v1',
     });
@@ -556,16 +1129,16 @@ export class JobList extends ApiObject {
  *
  * @schema io.k8s.api.batch.v1beta1.CronJob
  */
-export class CronJob extends ApiObject {
+export class KubeCronJobV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.batch.v1beta1.CronJob" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CronJobOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCronJobV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'CronJob',
       apiVersion: 'batch/v1beta1',
     });
@@ -577,18 +1150,60 @@ export class CronJob extends ApiObject {
  *
  * @schema io.k8s.api.batch.v1beta1.CronJobList
  */
-export class CronJobList extends ApiObject {
+export class KubeCronJobListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.batch.v1beta1.CronJobList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CronJobListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCronJobListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CronJobList',
       apiVersion: 'batch/v1beta1',
+    });
+  }
+}
+
+/**
+ * CronJob represents the configuration of a single cron job.
+ *
+ * @schema io.k8s.api.batch.v2alpha1.CronJob
+ */
+export class KubeCronJobV2Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.batch.v2alpha1.CronJob" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeCronJobV2Alpha1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'CronJob',
+      apiVersion: 'batch/v2alpha1',
+    });
+  }
+}
+
+/**
+ * CronJobList is a collection of cron jobs.
+ *
+ * @schema io.k8s.api.batch.v2alpha1.CronJobList
+ */
+export class KubeCronJobListV2Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.batch.v2alpha1.CronJobList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeCronJobListV2Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'CronJobList',
+      apiVersion: 'batch/v2alpha1',
     });
   }
 }
@@ -598,16 +1213,16 @@ export class CronJobList extends ApiObject {
  *
  * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequest
  */
-export class CertificateSigningRequest extends ApiObject {
+export class KubeCertificateSigningRequestV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.certificates.v1beta1.CertificateSigningRequest" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CertificateSigningRequestOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCertificateSigningRequestV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'CertificateSigningRequest',
       apiVersion: 'certificates.k8s.io/v1beta1',
     });
@@ -619,16 +1234,16 @@ export class CertificateSigningRequest extends ApiObject {
  *
  * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequestList
  */
-export class CertificateSigningRequestList extends ApiObject {
+export class KubeCertificateSigningRequestListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.certificates.v1beta1.CertificateSigningRequestList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CertificateSigningRequestListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCertificateSigningRequestListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CertificateSigningRequestList',
       apiVersion: 'certificates.k8s.io/v1beta1',
     });
@@ -640,16 +1255,16 @@ export class CertificateSigningRequestList extends ApiObject {
  *
  * @schema io.k8s.api.coordination.v1.Lease
  */
-export class Lease extends ApiObject {
+export class KubeLease extends ApiObject {
   /**
    * Defines a "io.k8s.api.coordination.v1.Lease" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: LeaseOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLeaseProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Lease',
       apiVersion: 'coordination.k8s.io/v1',
     });
@@ -661,18 +1276,60 @@ export class Lease extends ApiObject {
  *
  * @schema io.k8s.api.coordination.v1.LeaseList
  */
-export class LeaseList extends ApiObject {
+export class KubeLeaseList extends ApiObject {
   /**
    * Defines a "io.k8s.api.coordination.v1.LeaseList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: LeaseListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLeaseListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'LeaseList',
       apiVersion: 'coordination.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * Lease defines a lease concept.
+ *
+ * @schema io.k8s.api.coordination.v1beta1.Lease
+ */
+export class KubeLeaseV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.coordination.v1beta1.Lease" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeLeaseV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Lease',
+      apiVersion: 'coordination.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * LeaseList is a list of Lease objects.
+ *
+ * @schema io.k8s.api.coordination.v1beta1.LeaseList
+ */
+export class KubeLeaseListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.coordination.v1beta1.LeaseList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeLeaseListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'LeaseList',
+      apiVersion: 'coordination.k8s.io/v1beta1',
     });
   }
 }
@@ -682,16 +1339,16 @@ export class LeaseList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Binding
  */
-export class Binding extends ApiObject {
+export class KubeBinding extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Binding" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: BindingOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeBindingProps) {
+    super(scope, id, {
+      ...props,
       kind: 'Binding',
       apiVersion: 'v1',
     });
@@ -703,16 +1360,16 @@ export class Binding extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ComponentStatus
  */
-export class ComponentStatus extends ApiObject {
+export class KubeComponentStatus extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ComponentStatus" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ComponentStatusOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeComponentStatusProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ComponentStatus',
       apiVersion: 'v1',
     });
@@ -724,16 +1381,16 @@ export class ComponentStatus extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ComponentStatusList
  */
-export class ComponentStatusList extends ApiObject {
+export class KubeComponentStatusList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ComponentStatusList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ComponentStatusListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeComponentStatusListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ComponentStatusList',
       apiVersion: 'v1',
     });
@@ -745,16 +1402,16 @@ export class ComponentStatusList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ConfigMap
  */
-export class ConfigMap extends ApiObject {
+export class KubeConfigMap extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ConfigMap" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ConfigMapOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeConfigMapProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ConfigMap',
       apiVersion: 'v1',
     });
@@ -766,16 +1423,16 @@ export class ConfigMap extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ConfigMapList
  */
-export class ConfigMapList extends ApiObject {
+export class KubeConfigMapList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ConfigMapList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ConfigMapListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeConfigMapListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ConfigMapList',
       apiVersion: 'v1',
     });
@@ -798,16 +1455,16 @@ export class ConfigMapList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Endpoints
  */
-export class Endpoints extends ApiObject {
+export class KubeEndpoints extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Endpoints" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: EndpointsOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeEndpointsProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Endpoints',
       apiVersion: 'v1',
     });
@@ -819,16 +1476,16 @@ export class Endpoints extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.EndpointsList
  */
-export class EndpointsList extends ApiObject {
+export class KubeEndpointsList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.EndpointsList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: EndpointsListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeEndpointsListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'EndpointsList',
       apiVersion: 'v1',
     });
@@ -840,16 +1497,16 @@ export class EndpointsList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Event
  */
-export class Event extends ApiObject {
+export class KubeEvent extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Event" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: EventOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeEventProps) {
+    super(scope, id, {
+      ...props,
       kind: 'Event',
       apiVersion: 'v1',
     });
@@ -861,16 +1518,16 @@ export class Event extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.EventList
  */
-export class EventList extends ApiObject {
+export class KubeEventList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.EventList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: EventListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeEventListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'EventList',
       apiVersion: 'v1',
     });
@@ -882,16 +1539,16 @@ export class EventList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.LimitRange
  */
-export class LimitRange extends ApiObject {
+export class KubeLimitRange extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.LimitRange" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: LimitRangeOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLimitRangeProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'LimitRange',
       apiVersion: 'v1',
     });
@@ -903,16 +1560,16 @@ export class LimitRange extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.LimitRangeList
  */
-export class LimitRangeList extends ApiObject {
+export class KubeLimitRangeList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.LimitRangeList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: LimitRangeListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeLimitRangeListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'LimitRangeList',
       apiVersion: 'v1',
     });
@@ -924,16 +1581,16 @@ export class LimitRangeList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Namespace
  */
-export class Namespace extends ApiObject {
+export class KubeNamespace extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Namespace" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NamespaceOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNamespaceProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Namespace',
       apiVersion: 'v1',
     });
@@ -945,16 +1602,16 @@ export class Namespace extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.NamespaceList
  */
-export class NamespaceList extends ApiObject {
+export class KubeNamespaceList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.NamespaceList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NamespaceListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNamespaceListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'NamespaceList',
       apiVersion: 'v1',
     });
@@ -966,16 +1623,16 @@ export class NamespaceList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Node
  */
-export class Node extends ApiObject {
+export class KubeNode extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Node" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NodeOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNodeProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Node',
       apiVersion: 'v1',
     });
@@ -987,16 +1644,16 @@ export class Node extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.NodeList
  */
-export class NodeList extends ApiObject {
+export class KubeNodeList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.NodeList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NodeListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNodeListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'NodeList',
       apiVersion: 'v1',
     });
@@ -1008,16 +1665,16 @@ export class NodeList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PersistentVolume
  */
-export class PersistentVolume extends ApiObject {
+export class KubePersistentVolume extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PersistentVolume" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PersistentVolumeOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePersistentVolumeProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PersistentVolume',
       apiVersion: 'v1',
     });
@@ -1029,16 +1686,16 @@ export class PersistentVolume extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeClaim
  */
-export class PersistentVolumeClaim extends ApiObject {
+export class KubePersistentVolumeClaim extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PersistentVolumeClaim" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PersistentVolumeClaimOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePersistentVolumeClaimProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PersistentVolumeClaim',
       apiVersion: 'v1',
     });
@@ -1050,16 +1707,16 @@ export class PersistentVolumeClaim extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeClaimList
  */
-export class PersistentVolumeClaimList extends ApiObject {
+export class KubePersistentVolumeClaimList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PersistentVolumeClaimList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PersistentVolumeClaimListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePersistentVolumeClaimListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PersistentVolumeClaimList',
       apiVersion: 'v1',
     });
@@ -1071,16 +1728,16 @@ export class PersistentVolumeClaimList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeList
  */
-export class PersistentVolumeList extends ApiObject {
+export class KubePersistentVolumeList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PersistentVolumeList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PersistentVolumeListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePersistentVolumeListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PersistentVolumeList',
       apiVersion: 'v1',
     });
@@ -1092,16 +1749,16 @@ export class PersistentVolumeList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Pod
  */
-export class Pod extends ApiObject {
+export class KubePod extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Pod" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Pod',
       apiVersion: 'v1',
     });
@@ -1113,16 +1770,16 @@ export class Pod extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PodList
  */
-export class PodList extends ApiObject {
+export class KubePodList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PodList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PodList',
       apiVersion: 'v1',
     });
@@ -1134,16 +1791,16 @@ export class PodList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PodTemplate
  */
-export class PodTemplate extends ApiObject {
+export class KubePodTemplate extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PodTemplate" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodTemplateOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodTemplateProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PodTemplate',
       apiVersion: 'v1',
     });
@@ -1155,16 +1812,16 @@ export class PodTemplate extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.PodTemplateList
  */
-export class PodTemplateList extends ApiObject {
+export class KubePodTemplateList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.PodTemplateList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodTemplateListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodTemplateListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PodTemplateList',
       apiVersion: 'v1',
     });
@@ -1176,16 +1833,16 @@ export class PodTemplateList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ReplicationController
  */
-export class ReplicationController extends ApiObject {
+export class KubeReplicationController extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ReplicationController" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ReplicationControllerOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeReplicationControllerProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ReplicationController',
       apiVersion: 'v1',
     });
@@ -1197,16 +1854,16 @@ export class ReplicationController extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ReplicationControllerList
  */
-export class ReplicationControllerList extends ApiObject {
+export class KubeReplicationControllerList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ReplicationControllerList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ReplicationControllerListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeReplicationControllerListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ReplicationControllerList',
       apiVersion: 'v1',
     });
@@ -1218,16 +1875,16 @@ export class ReplicationControllerList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ResourceQuota
  */
-export class ResourceQuota extends ApiObject {
+export class KubeResourceQuota extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ResourceQuota" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ResourceQuotaOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeResourceQuotaProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ResourceQuota',
       apiVersion: 'v1',
     });
@@ -1239,16 +1896,16 @@ export class ResourceQuota extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ResourceQuotaList
  */
-export class ResourceQuotaList extends ApiObject {
+export class KubeResourceQuotaList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ResourceQuotaList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ResourceQuotaListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeResourceQuotaListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ResourceQuotaList',
       apiVersion: 'v1',
     });
@@ -1260,16 +1917,16 @@ export class ResourceQuotaList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Secret
  */
-export class Secret extends ApiObject {
+export class KubeSecret extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Secret" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: SecretOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeSecretProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Secret',
       apiVersion: 'v1',
     });
@@ -1281,16 +1938,16 @@ export class Secret extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.SecretList
  */
-export class SecretList extends ApiObject {
+export class KubeSecretList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.SecretList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: SecretListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeSecretListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'SecretList',
       apiVersion: 'v1',
     });
@@ -1302,16 +1959,16 @@ export class SecretList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.Service
  */
-export class Service extends ApiObject {
+export class KubeService extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.Service" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ServiceOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeServiceProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Service',
       apiVersion: 'v1',
     });
@@ -1323,16 +1980,16 @@ export class Service extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ServiceAccount
  */
-export class ServiceAccount extends ApiObject {
+export class KubeServiceAccount extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ServiceAccount" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ServiceAccountOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeServiceAccountProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ServiceAccount',
       apiVersion: 'v1',
     });
@@ -1344,16 +2001,16 @@ export class ServiceAccount extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ServiceAccountList
  */
-export class ServiceAccountList extends ApiObject {
+export class KubeServiceAccountList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ServiceAccountList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ServiceAccountListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeServiceAccountListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ServiceAccountList',
       apiVersion: 'v1',
     });
@@ -1365,18 +2022,102 @@ export class ServiceAccountList extends ApiObject {
  *
  * @schema io.k8s.api.core.v1.ServiceList
  */
-export class ServiceList extends ApiObject {
+export class KubeServiceList extends ApiObject {
   /**
    * Defines a "io.k8s.api.core.v1.ServiceList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ServiceListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeServiceListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ServiceList',
       apiVersion: 'v1',
+    });
+  }
+}
+
+/**
+ * Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.
+ *
+ * @schema io.k8s.api.events.v1beta1.Event
+ */
+export class KubeEventV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.events.v1beta1.Event" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeEventV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'Event',
+      apiVersion: 'events.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * EventList is a list of Event objects.
+ *
+ * @schema io.k8s.api.events.v1beta1.EventList
+ */
+export class KubeEventListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.events.v1beta1.EventList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeEventListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'EventList',
+      apiVersion: 'events.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1beta2/DaemonSet. See the release notes for more information. DaemonSet represents the configuration of a daemon set.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSet
+ */
+export class KubeDaemonSetV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.DaemonSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'DaemonSet',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * DaemonSetList is a collection of daemon sets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSetList
+ */
+export class KubeDaemonSetListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.DaemonSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeDaemonSetListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'DaemonSetList',
+      apiVersion: 'extensions/v1beta1',
     });
   }
 }
@@ -1386,16 +2127,16 @@ export class ServiceList extends ApiObject {
  *
  * @schema io.k8s.api.networking.v1beta1.Ingress
  */
-export class Ingress extends ApiObject {
+export class KubeIngressV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.networking.v1beta1.Ingress" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: IngressOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeIngressV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Ingress',
       apiVersion: 'networking.k8s.io/v1beta1',
     });
@@ -1407,16 +2148,16 @@ export class Ingress extends ApiObject {
  *
  * @schema io.k8s.api.networking.v1beta1.IngressList
  */
-export class IngressList extends ApiObject {
+export class KubeIngressListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.networking.v1beta1.IngressList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: IngressListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeIngressListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'IngressList',
       apiVersion: 'networking.k8s.io/v1beta1',
     });
@@ -1424,43 +2165,43 @@ export class IngressList extends ApiObject {
 }
 
 /**
- * NetworkPolicy describes what network traffic is allowed for a set of Pods
+ * DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic is allowed for a set of Pods
  *
- * @schema io.k8s.api.networking.v1.NetworkPolicy
+ * @schema io.k8s.api.extensions.v1beta1.NetworkPolicy
  */
-export class NetworkPolicy extends ApiObject {
+export class KubeNetworkPolicyV1Beta1 extends ApiObject {
   /**
-   * Defines a "io.k8s.api.networking.v1.NetworkPolicy" API object
+   * Defines a "io.k8s.api.extensions.v1beta1.NetworkPolicy" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NetworkPolicyOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNetworkPolicyV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'NetworkPolicy',
-      apiVersion: 'networking.k8s.io/v1',
+      apiVersion: 'extensions/v1beta1',
     });
   }
 }
 
 /**
- * NetworkPolicyList is a list of NetworkPolicy objects.
+ * DEPRECATED 1.9 - This group version of NetworkPolicyList is deprecated by networking/v1/NetworkPolicyList. Network Policy List is a list of NetworkPolicy objects.
  *
- * @schema io.k8s.api.networking.v1.NetworkPolicyList
+ * @schema io.k8s.api.extensions.v1beta1.NetworkPolicyList
  */
-export class NetworkPolicyList extends ApiObject {
+export class KubeNetworkPolicyListV1Beta1 extends ApiObject {
   /**
-   * Defines a "io.k8s.api.networking.v1.NetworkPolicyList" API object
+   * Defines a "io.k8s.api.extensions.v1beta1.NetworkPolicyList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: NetworkPolicyListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeNetworkPolicyListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'NetworkPolicyList',
-      apiVersion: 'networking.k8s.io/v1',
+      apiVersion: 'extensions/v1beta1',
     });
   }
 }
@@ -1470,16 +2211,16 @@ export class NetworkPolicyList extends ApiObject {
  *
  * @schema io.k8s.api.policy.v1beta1.PodSecurityPolicy
  */
-export class PodSecurityPolicy extends ApiObject {
+export class KubePodSecurityPolicyV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.policy.v1beta1.PodSecurityPolicy" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodSecurityPolicyOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodSecurityPolicyV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PodSecurityPolicy',
       apiVersion: 'policy/v1beta1',
     });
@@ -1491,18 +2232,144 @@ export class PodSecurityPolicy extends ApiObject {
  *
  * @schema io.k8s.api.policy.v1beta1.PodSecurityPolicyList
  */
-export class PodSecurityPolicyList extends ApiObject {
+export class KubePodSecurityPolicyListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.policy.v1beta1.PodSecurityPolicyList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodSecurityPolicyListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodSecurityPolicyListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'PodSecurityPolicyList',
       apiVersion: 'policy/v1beta1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1beta2/ReplicaSet. See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.ReplicaSet
+ */
+export class KubeReplicaSetV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.ReplicaSet" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'ReplicaSet',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * ReplicaSetList is a collection of ReplicaSets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.ReplicaSetList
+ */
+export class KubeReplicaSetListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.extensions.v1beta1.ReplicaSetList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeReplicaSetListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ReplicaSetList',
+      apiVersion: 'extensions/v1beta1',
+    });
+  }
+}
+
+/**
+ * NetworkPolicy describes what network traffic is allowed for a set of Pods
+ *
+ * @schema io.k8s.api.networking.v1.NetworkPolicy
+ */
+export class KubeNetworkPolicy extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.networking.v1.NetworkPolicy" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeNetworkPolicyProps = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'NetworkPolicy',
+      apiVersion: 'networking.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * NetworkPolicyList is a list of NetworkPolicy objects.
+ *
+ * @schema io.k8s.api.networking.v1.NetworkPolicyList
+ */
+export class KubeNetworkPolicyList extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.networking.v1.NetworkPolicyList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeNetworkPolicyListProps) {
+    super(scope, id, {
+      ...props,
+      kind: 'NetworkPolicyList',
+      apiVersion: 'networking.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * RuntimeClass defines a class of container runtime supported in the cluster. The RuntimeClass is used to determine which container runtime is used to run all containers in a pod. RuntimeClasses are (currently) manually defined by a user or cluster provisioner, and referenced in the PodSpec. The Kubelet is responsible for resolving the RuntimeClassName reference before running the pod.  For more details, see https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md
+ *
+ * @schema io.k8s.api.node.v1alpha1.RuntimeClass
+ */
+export class KubeRuntimeClassV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.node.v1alpha1.RuntimeClass" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRuntimeClassV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RuntimeClass',
+      apiVersion: 'node.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * RuntimeClassList is a list of RuntimeClass objects.
+ *
+ * @schema io.k8s.api.node.v1alpha1.RuntimeClassList
+ */
+export class KubeRuntimeClassListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.node.v1alpha1.RuntimeClassList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRuntimeClassListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RuntimeClassList',
+      apiVersion: 'node.k8s.io/v1alpha1',
     });
   }
 }
@@ -1512,16 +2379,16 @@ export class PodSecurityPolicyList extends ApiObject {
  *
  * @schema io.k8s.api.node.v1beta1.RuntimeClass
  */
-export class RuntimeClass extends ApiObject {
+export class KubeRuntimeClassV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.node.v1beta1.RuntimeClass" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RuntimeClassOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRuntimeClassV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'RuntimeClass',
       apiVersion: 'node.k8s.io/v1beta1',
     });
@@ -1533,16 +2400,16 @@ export class RuntimeClass extends ApiObject {
  *
  * @schema io.k8s.api.node.v1beta1.RuntimeClassList
  */
-export class RuntimeClassList extends ApiObject {
+export class KubeRuntimeClassListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.node.v1beta1.RuntimeClassList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RuntimeClassListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRuntimeClassListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'RuntimeClassList',
       apiVersion: 'node.k8s.io/v1beta1',
     });
@@ -1554,16 +2421,16 @@ export class RuntimeClassList extends ApiObject {
  *
  * @schema io.k8s.api.policy.v1beta1.Eviction
  */
-export class Eviction extends ApiObject {
+export class KubeEvictionV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.policy.v1beta1.Eviction" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: EvictionOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeEvictionV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Eviction',
       apiVersion: 'policy/v1beta1',
     });
@@ -1575,16 +2442,16 @@ export class Eviction extends ApiObject {
  *
  * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudget
  */
-export class PodDisruptionBudget extends ApiObject {
+export class KubePodDisruptionBudgetV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.policy.v1beta1.PodDisruptionBudget" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodDisruptionBudgetOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodDisruptionBudgetV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PodDisruptionBudget',
       apiVersion: 'policy/v1beta1',
     });
@@ -1596,16 +2463,16 @@ export class PodDisruptionBudget extends ApiObject {
  *
  * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudgetList
  */
-export class PodDisruptionBudgetList extends ApiObject {
+export class KubePodDisruptionBudgetListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.policy.v1beta1.PodDisruptionBudgetList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodDisruptionBudgetListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodDisruptionBudgetListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'PodDisruptionBudgetList',
       apiVersion: 'policy/v1beta1',
     });
@@ -1617,16 +2484,16 @@ export class PodDisruptionBudgetList extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRole
  */
-export class ClusterRole extends ApiObject {
+export class KubeClusterRole extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.ClusterRole" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ClusterRoleOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'ClusterRole',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1638,16 +2505,16 @@ export class ClusterRole extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleBinding
  */
-export class ClusterRoleBinding extends ApiObject {
+export class KubeClusterRoleBinding extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.ClusterRoleBinding" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ClusterRoleBindingOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ClusterRoleBinding',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1659,16 +2526,16 @@ export class ClusterRoleBinding extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleBindingList
  */
-export class ClusterRoleBindingList extends ApiObject {
+export class KubeClusterRoleBindingList extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.ClusterRoleBindingList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ClusterRoleBindingListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ClusterRoleBindingList',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1680,16 +2547,16 @@ export class ClusterRoleBindingList extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleList
  */
-export class ClusterRoleList extends ApiObject {
+export class KubeClusterRoleList extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.ClusterRoleList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ClusterRoleListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'ClusterRoleList',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1701,16 +2568,16 @@ export class ClusterRoleList extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.Role
  */
-export class Role extends ApiObject {
+export class KubeRole extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.Role" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RoleOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRoleProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Role',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1722,16 +2589,16 @@ export class Role extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.RoleBinding
  */
-export class RoleBinding extends ApiObject {
+export class KubeRoleBinding extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.RoleBinding" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RoleBindingOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingProps) {
+    super(scope, id, {
+      ...props,
       kind: 'RoleBinding',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1743,16 +2610,16 @@ export class RoleBinding extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.RoleBindingList
  */
-export class RoleBindingList extends ApiObject {
+export class KubeRoleBindingList extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.RoleBindingList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RoleBindingListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'RoleBindingList',
       apiVersion: 'rbac.authorization.k8s.io/v1',
     });
@@ -1764,18 +2631,354 @@ export class RoleBindingList extends ApiObject {
  *
  * @schema io.k8s.api.rbac.v1.RoleList
  */
-export class RoleList extends ApiObject {
+export class KubeRoleList extends ApiObject {
   /**
    * Defines a "io.k8s.api.rbac.v1.RoleList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: RoleListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeRoleListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'RoleList',
       apiVersion: 'rbac.authorization.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRole
+ */
+export class KubeClusterRoleV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.ClusterRole" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleV1Alpha1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRole',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a ClusterRole in the global namespace, and adds who information via Subject.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBinding
+ */
+export class KubeClusterRoleBindingV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.ClusterRoleBinding" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleBinding',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleBindingList is a collection of ClusterRoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBindingList
+ */
+export class KubeClusterRoleBindingListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.ClusterRoleBindingList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleBindingList',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleList is a collection of ClusterRoles
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleList
+ */
+export class KubeClusterRoleListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.ClusterRoleList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleList',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.Role
+ */
+export class KubeRoleV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.Role" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleV1Alpha1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Role',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * RoleBinding references a role, but does not contain it.  It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleBinding
+ */
+export class KubeRoleBindingV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.RoleBinding" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleBinding',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * RoleBindingList is a collection of RoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleBindingList
+ */
+export class KubeRoleBindingListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.RoleBindingList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleBindingList',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * RoleList is a collection of Roles
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleList
+ */
+export class KubeRoleListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1alpha1.RoleList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleList',
+      apiVersion: 'rbac.authorization.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRole
+ */
+export class KubeClusterRoleV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.ClusterRole" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRole',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a ClusterRole in the global namespace, and adds who information via Subject.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBinding
+ */
+export class KubeClusterRoleBindingV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.ClusterRoleBinding" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleBinding',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleBindingList is a collection of ClusterRoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBindingList
+ */
+export class KubeClusterRoleBindingListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.ClusterRoleBindingList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleBindingListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleBindingList',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * ClusterRoleList is a collection of ClusterRoles
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleList
+ */
+export class KubeClusterRoleListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.ClusterRoleList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeClusterRoleListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'ClusterRoleList',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.Role
+ */
+export class KubeRoleV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.Role" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'Role',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * RoleBinding references a role, but does not contain it.  It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleBinding
+ */
+export class KubeRoleBindingV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.RoleBinding" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleBinding',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * RoleBindingList is a collection of RoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleBindingList
+ */
+export class KubeRoleBindingListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.RoleBindingList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleBindingListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleBindingList',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * RoleList is a collection of Roles
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleList
+ */
+export class KubeRoleListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.rbac.v1beta1.RoleList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeRoleListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'RoleList',
+      apiVersion: 'rbac.authorization.k8s.io/v1beta1',
     });
   }
 }
@@ -1785,16 +2988,16 @@ export class RoleList extends ApiObject {
  *
  * @schema io.k8s.api.scheduling.v1.PriorityClass
  */
-export class PriorityClass extends ApiObject {
+export class KubePriorityClass extends ApiObject {
   /**
    * Defines a "io.k8s.api.scheduling.v1.PriorityClass" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PriorityClassOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePriorityClassProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PriorityClass',
       apiVersion: 'scheduling.k8s.io/v1',
     });
@@ -1806,18 +3009,102 @@ export class PriorityClass extends ApiObject {
  *
  * @schema io.k8s.api.scheduling.v1.PriorityClassList
  */
-export class PriorityClassList extends ApiObject {
+export class KubePriorityClassList extends ApiObject {
   /**
    * Defines a "io.k8s.api.scheduling.v1.PriorityClassList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PriorityClassListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePriorityClassListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'PriorityClassList',
       apiVersion: 'scheduling.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
+ *
+ * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass
+ */
+export class KubePriorityClassV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.scheduling.v1alpha1.PriorityClass" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubePriorityClassV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'PriorityClass',
+      apiVersion: 'scheduling.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * PriorityClassList is a collection of priority classes.
+ *
+ * @schema io.k8s.api.scheduling.v1alpha1.PriorityClassList
+ */
+export class KubePriorityClassListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.scheduling.v1alpha1.PriorityClassList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubePriorityClassListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'PriorityClassList',
+      apiVersion: 'scheduling.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
+ *
+ * @schema io.k8s.api.scheduling.v1beta1.PriorityClass
+ */
+export class KubePriorityClassV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.scheduling.v1beta1.PriorityClass" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubePriorityClassV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'PriorityClass',
+      apiVersion: 'scheduling.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * PriorityClassList is a collection of priority classes.
+ *
+ * @schema io.k8s.api.scheduling.v1beta1.PriorityClassList
+ */
+export class KubePriorityClassListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.scheduling.v1beta1.PriorityClassList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubePriorityClassListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'PriorityClassList',
+      apiVersion: 'scheduling.k8s.io/v1beta1',
     });
   }
 }
@@ -1827,16 +3114,16 @@ export class PriorityClassList extends ApiObject {
  *
  * @schema io.k8s.api.settings.v1alpha1.PodPreset
  */
-export class PodPreset extends ApiObject {
+export class KubePodPresetV1Alpha1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.settings.v1alpha1.PodPreset" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodPresetOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodPresetV1Alpha1Props = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'PodPreset',
       apiVersion: 'settings.k8s.io/v1alpha1',
     });
@@ -1848,16 +3135,16 @@ export class PodPreset extends ApiObject {
  *
  * @schema io.k8s.api.settings.v1alpha1.PodPresetList
  */
-export class PodPresetList extends ApiObject {
+export class KubePodPresetListV1Alpha1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.settings.v1alpha1.PodPresetList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: PodPresetListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubePodPresetListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'PodPresetList',
       apiVersion: 'settings.k8s.io/v1alpha1',
     });
@@ -1871,16 +3158,16 @@ StorageClasses are non-namespaced; the name of the storage class according to et
  *
  * @schema io.k8s.api.storage.v1.StorageClass
  */
-export class StorageClass extends ApiObject {
+export class KubeStorageClass extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1.StorageClass" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: StorageClassOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeStorageClassProps) {
+    super(scope, id, {
+      ...props,
       kind: 'StorageClass',
       apiVersion: 'storage.k8s.io/v1',
     });
@@ -1892,16 +3179,16 @@ export class StorageClass extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1.StorageClassList
  */
-export class StorageClassList extends ApiObject {
+export class KubeStorageClassList extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1.StorageClassList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: StorageClassListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeStorageClassListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'StorageClassList',
       apiVersion: 'storage.k8s.io/v1',
     });
@@ -1915,16 +3202,16 @@ VolumeAttachment objects are non-namespaced.
  *
  * @schema io.k8s.api.storage.v1.VolumeAttachment
  */
-export class VolumeAttachment extends ApiObject {
+export class KubeVolumeAttachment extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1.VolumeAttachment" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: VolumeAttachmentOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentProps) {
+    super(scope, id, {
+      ...props,
       kind: 'VolumeAttachment',
       apiVersion: 'storage.k8s.io/v1',
     });
@@ -1936,18 +3223,62 @@ export class VolumeAttachment extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1.VolumeAttachmentList
  */
-export class VolumeAttachmentList extends ApiObject {
+export class KubeVolumeAttachmentList extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1.VolumeAttachmentList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: VolumeAttachmentListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'VolumeAttachmentList',
       apiVersion: 'storage.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.
+
+VolumeAttachment objects are non-namespaced.
+ *
+ * @schema io.k8s.api.storage.v1alpha1.VolumeAttachment
+ */
+export class KubeVolumeAttachmentV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1alpha1.VolumeAttachment" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'VolumeAttachment',
+      apiVersion: 'storage.k8s.io/v1alpha1',
+    });
+  }
+}
+
+/**
+ * VolumeAttachmentList is a collection of VolumeAttachment objects.
+ *
+ * @schema io.k8s.api.storage.v1alpha1.VolumeAttachmentList
+ */
+export class KubeVolumeAttachmentListV1Alpha1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1alpha1.VolumeAttachmentList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentListV1Alpha1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'VolumeAttachmentList',
+      apiVersion: 'storage.k8s.io/v1alpha1',
     });
   }
 }
@@ -1957,16 +3288,16 @@ export class VolumeAttachmentList extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1beta1.CSIDriver
  */
-export class CsiDriver extends ApiObject {
+export class KubeCsiDriverV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1beta1.CSIDriver" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CsiDriverOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCsiDriverV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CSIDriver',
       apiVersion: 'storage.k8s.io/v1beta1',
     });
@@ -1978,16 +3309,16 @@ export class CsiDriver extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1beta1.CSIDriverList
  */
-export class CsiDriverList extends ApiObject {
+export class KubeCsiDriverListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1beta1.CSIDriverList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CsiDriverListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCsiDriverListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CSIDriverList',
       apiVersion: 'storage.k8s.io/v1beta1',
     });
@@ -1999,16 +3330,16 @@ export class CsiDriverList extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1beta1.CSINode
  */
-export class CsiNode extends ApiObject {
+export class KubeCsiNodeV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1beta1.CSINode" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CsiNodeOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCsiNodeV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CSINode',
       apiVersion: 'storage.k8s.io/v1beta1',
     });
@@ -2020,17 +3351,105 @@ export class CsiNode extends ApiObject {
  *
  * @schema io.k8s.api.storage.v1beta1.CSINodeList
  */
-export class CsiNodeList extends ApiObject {
+export class KubeCsiNodeListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.api.storage.v1beta1.CSINodeList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CsiNodeListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCsiNodeListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CSINodeList',
+      apiVersion: 'storage.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.
+
+StorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.
+ *
+ * @schema io.k8s.api.storage.v1beta1.StorageClass
+ */
+export class KubeStorageClassV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1beta1.StorageClass" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStorageClassV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'StorageClass',
+      apiVersion: 'storage.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * StorageClassList is a collection of storage classes.
+ *
+ * @schema io.k8s.api.storage.v1beta1.StorageClassList
+ */
+export class KubeStorageClassListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1beta1.StorageClassList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeStorageClassListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'StorageClassList',
+      apiVersion: 'storage.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.
+
+VolumeAttachment objects are non-namespaced.
+ *
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachment
+ */
+export class KubeVolumeAttachmentV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1beta1.VolumeAttachment" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'VolumeAttachment',
+      apiVersion: 'storage.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * VolumeAttachmentList is a collection of VolumeAttachment objects.
+ *
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentList
+ */
+export class KubeVolumeAttachmentListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.api.storage.v1beta1.VolumeAttachmentList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeVolumeAttachmentListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'VolumeAttachmentList',
       apiVersion: 'storage.k8s.io/v1beta1',
     });
   }
@@ -2041,16 +3460,16 @@ export class CsiNodeList extends ApiObject {
  *
  * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinition
  */
-export class CustomResourceDefinition extends ApiObject {
+export class KubeCustomResourceDefinitionV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinition" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CustomResourceDefinitionOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCustomResourceDefinitionV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CustomResourceDefinition',
       apiVersion: 'apiextensions.k8s.io/v1beta1',
     });
@@ -2062,16 +3481,16 @@ export class CustomResourceDefinition extends ApiObject {
  *
  * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinitionList
  */
-export class CustomResourceDefinitionList extends ApiObject {
+export class KubeCustomResourceDefinitionListV1Beta1 extends ApiObject {
   /**
    * Defines a "io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinitionList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: CustomResourceDefinitionListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeCustomResourceDefinitionListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
       kind: 'CustomResourceDefinitionList',
       apiVersion: 'apiextensions.k8s.io/v1beta1',
     });
@@ -2083,16 +3502,16 @@ export class CustomResourceDefinitionList extends ApiObject {
  *
  * @schema io.k8s.apimachinery.pkg.apis.meta.v1.Status
  */
-export class Status extends ApiObject {
+export class KubeStatus extends ApiObject {
   /**
    * Defines a "io.k8s.apimachinery.pkg.apis.meta.v1.Status" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: StatusOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeStatusProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'Status',
       apiVersion: 'v1',
     });
@@ -2104,16 +3523,16 @@ export class Status extends ApiObject {
  *
  * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIService
  */
-export class ApiService extends ApiObject {
+export class KubeApiService extends ApiObject {
   /**
    * Defines a "io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIService" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ApiServiceOptions = {}) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeApiServiceProps = {}) {
+    super(scope, id, {
+      ...props,
       kind: 'APIService',
       apiVersion: 'apiregistration.k8s.io/v1',
     });
@@ -2125,18 +3544,60 @@ export class ApiService extends ApiObject {
  *
  * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceList
  */
-export class ApiServiceList extends ApiObject {
+export class KubeApiServiceList extends ApiObject {
   /**
    * Defines a "io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceList" API object
    * @param scope the scope in which to define this object
-   * @param name a scope-local name for the object
-   * @param options configuration options
+   * @param id a scope-local name for the object
+   * @param props initialiation props
    */
-  public constructor(scope: Construct, name: string, options: ApiServiceListOptions) {
-    super(scope, name, {
-      ...options,
+  public constructor(scope: Construct, id: string, props: KubeApiServiceListProps) {
+    super(scope, id, {
+      ...props,
       kind: 'APIServiceList',
       apiVersion: 'apiregistration.k8s.io/v1',
+    });
+  }
+}
+
+/**
+ * APIService represents a server for a particular GroupVersion. Name must be "version.group".
+ *
+ * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIService
+ */
+export class KubeApiServiceV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIService" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeApiServiceV1Beta1Props = {}) {
+    super(scope, id, {
+      ...props,
+      kind: 'APIService',
+      apiVersion: 'apiregistration.k8s.io/v1beta1',
+    });
+  }
+}
+
+/**
+ * APIServiceList is a list of APIService objects.
+ *
+ * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceList
+ */
+export class KubeApiServiceListV1Beta1 extends ApiObject {
+  /**
+   * Defines a "io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceList" API object
+   * @param scope the scope in which to define this object
+   * @param id a scope-local name for the object
+   * @param props initialiation props
+   */
+  public constructor(scope: Construct, id: string, props: KubeApiServiceListV1Beta1Props) {
+    super(scope, id, {
+      ...props,
+      kind: 'APIServiceList',
+      apiVersion: 'apiregistration.k8s.io/v1beta1',
     });
   }
 }
@@ -2146,7 +3607,7 @@ export class ApiServiceList extends ApiObject {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfiguration
  */
-export interface MutatingWebhookConfigurationOptions {
+export interface KubeMutatingWebhookConfigurationV1Beta1Props {
   /**
    * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
    *
@@ -2168,13 +3629,13 @@ export interface MutatingWebhookConfigurationOptions {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfigurationList
  */
-export interface MutatingWebhookConfigurationListOptions {
+export interface KubeMutatingWebhookConfigurationListV1Beta1Props {
   /**
    * List of MutatingWebhookConfiguration.
    *
    * @schema io.k8s.api.admissionregistration.v1beta1.MutatingWebhookConfigurationList#items
    */
-  readonly items: MutatingWebhookConfiguration[];
+  readonly items: KubeMutatingWebhookConfigurationV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -2190,7 +3651,7 @@ export interface MutatingWebhookConfigurationListOptions {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfiguration
  */
-export interface ValidatingWebhookConfigurationOptions {
+export interface KubeValidatingWebhookConfigurationV1Beta1Props {
   /**
    * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
    *
@@ -2212,13 +3673,13 @@ export interface ValidatingWebhookConfigurationOptions {
  *
  * @schema io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList
  */
-export interface ValidatingWebhookConfigurationListOptions {
+export interface KubeValidatingWebhookConfigurationListV1Beta1Props {
   /**
    * List of ValidatingWebhookConfiguration.
    *
    * @schema io.k8s.api.admissionregistration.v1beta1.ValidatingWebhookConfigurationList#items
    */
-  readonly items: ValidatingWebhookConfiguration[];
+  readonly items: KubeValidatingWebhookConfigurationV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -2234,7 +3695,7 @@ export interface ValidatingWebhookConfigurationListOptions {
  *
  * @schema io.k8s.api.apps.v1.ControllerRevision
  */
-export interface ControllerRevisionOptions {
+export interface KubeControllerRevisionProps {
   /**
    * Data is the serialized representation of the state.
    *
@@ -2263,13 +3724,13 @@ export interface ControllerRevisionOptions {
  *
  * @schema io.k8s.api.apps.v1.ControllerRevisionList
  */
-export interface ControllerRevisionListOptions {
+export interface KubeControllerRevisionListProps {
   /**
    * Items is the list of ControllerRevisions
    *
    * @schema io.k8s.api.apps.v1.ControllerRevisionList#items
    */
-  readonly items: ControllerRevision[];
+  readonly items: KubeControllerRevisionProps[];
 
   /**
    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2285,7 +3746,7 @@ export interface ControllerRevisionListOptions {
  *
  * @schema io.k8s.api.apps.v1.DaemonSet
  */
-export interface DaemonSetOptions {
+export interface KubeDaemonSetProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2307,13 +3768,13 @@ export interface DaemonSetOptions {
  *
  * @schema io.k8s.api.apps.v1.DaemonSetList
  */
-export interface DaemonSetListOptions {
+export interface KubeDaemonSetListProps {
   /**
    * A list of daemon sets.
    *
    * @schema io.k8s.api.apps.v1.DaemonSetList#items
    */
-  readonly items: DaemonSet[];
+  readonly items: KubeDaemonSetProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2329,7 +3790,7 @@ export interface DaemonSetListOptions {
  *
  * @schema io.k8s.api.apps.v1.Deployment
  */
-export interface DeploymentOptions {
+export interface KubeDeploymentProps {
   /**
    * Standard object metadata.
    *
@@ -2351,13 +3812,13 @@ export interface DeploymentOptions {
  *
  * @schema io.k8s.api.apps.v1.DeploymentList
  */
-export interface DeploymentListOptions {
+export interface KubeDeploymentListProps {
   /**
    * Items is the list of Deployments.
    *
    * @schema io.k8s.api.apps.v1.DeploymentList#items
    */
-  readonly items: Deployment[];
+  readonly items: KubeDeploymentProps[];
 
   /**
    * Standard list metadata.
@@ -2373,7 +3834,7 @@ export interface DeploymentListOptions {
  *
  * @schema io.k8s.api.apps.v1.ReplicaSet
  */
-export interface ReplicaSetOptions {
+export interface KubeReplicaSetProps {
   /**
    * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2395,13 +3856,13 @@ export interface ReplicaSetOptions {
  *
  * @schema io.k8s.api.apps.v1.ReplicaSetList
  */
-export interface ReplicaSetListOptions {
+export interface KubeReplicaSetListProps {
   /**
    * List of ReplicaSets. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
    *
    * @schema io.k8s.api.apps.v1.ReplicaSetList#items
    */
-  readonly items: ReplicaSet[];
+  readonly items: KubeReplicaSetProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -2420,7 +3881,7 @@ The StatefulSet guarantees that a given network identity will always map to the 
  *
  * @schema io.k8s.api.apps.v1.StatefulSet
  */
-export interface StatefulSetOptions {
+export interface KubeStatefulSetProps {
   /**
    * @schema io.k8s.api.apps.v1.StatefulSet#metadata
    */
@@ -2440,11 +3901,11 @@ export interface StatefulSetOptions {
  *
  * @schema io.k8s.api.apps.v1.StatefulSetList
  */
-export interface StatefulSetListOptions {
+export interface KubeStatefulSetListProps {
   /**
    * @schema io.k8s.api.apps.v1.StatefulSetList#items
    */
-  readonly items: StatefulSet[];
+  readonly items: KubeStatefulSetProps[];
 
   /**
    * @schema io.k8s.api.apps.v1.StatefulSetList#metadata
@@ -2454,24 +3915,406 @@ export interface StatefulSetListOptions {
 }
 
 /**
- * Scale represents a scaling request for a resource.
+ * DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1beta2/ControllerRevision. See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
  *
- * @schema io.k8s.api.autoscaling.v1.Scale
+ * @schema io.k8s.api.apps.v1beta1.ControllerRevision
  */
-export interface ScaleOptions {
+export interface KubeControllerRevisionV1Beta1Props {
   /**
-   * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+   * Data is the serialized representation of the state.
    *
-   * @schema io.k8s.api.autoscaling.v1.Scale#metadata
+   * @schema io.k8s.api.apps.v1beta1.ControllerRevision#data
+   */
+  readonly data?: RawExtension;
+
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta1.ControllerRevision#metadata
    */
   readonly metadata?: ObjectMeta;
 
   /**
-   * defines the behavior of the scale. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+   * Revision indicates the revision of the state represented by Data.
    *
-   * @schema io.k8s.api.autoscaling.v1.Scale#spec
+   * @schema io.k8s.api.apps.v1beta1.ControllerRevision#revision
+   */
+  readonly revision: number;
+
+}
+
+/**
+ * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
+ *
+ * @schema io.k8s.api.apps.v1beta1.ControllerRevisionList
+ */
+export interface KubeControllerRevisionListV1Beta1Props {
+  /**
+   * Items is the list of ControllerRevisions
+   *
+   * @schema io.k8s.api.apps.v1beta1.ControllerRevisionList#items
+   */
+  readonly items: KubeControllerRevisionV1Beta1Props[];
+
+  /**
+   * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta1.ControllerRevisionList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Deployment. See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.Deployment
+ */
+export interface KubeDeploymentV1Beta1Props {
+  /**
+   * Standard object metadata.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.Deployment#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired behavior of the Deployment.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.Deployment#spec
+   */
+  readonly spec?: DeploymentSpec;
+
+}
+
+/**
+ * DeploymentList is a list of Deployments.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DeploymentList
+ */
+export interface KubeDeploymentListV1Beta1Props {
+  /**
+   * Items is the list of Deployments.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DeploymentList#items
+   */
+  readonly items: KubeDeploymentV1Beta1Props[];
+
+  /**
+   * Standard list metadata.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DeploymentList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * represents a scaling request for a resource.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.Scale
+ */
+export interface KubeScaleV1Beta1Props {
+  /**
+   * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.Scale#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * defines the behavior of the scale. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.Scale#spec
    */
   readonly spec?: ScaleSpec;
+
+}
+
+/**
+ * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1beta2/StatefulSet. See the release notes for more information. StatefulSet represents a set of pods with consistent identities. Identities are defined as:
+ - Network: A single stable DNS and hostname.
+ - Storage: As many VolumeClaims as requested.
+The StatefulSet guarantees that a given network identity will always map to the same storage identity.
+ *
+ * @schema io.k8s.api.apps.v1beta1.StatefulSet
+ */
+export interface KubeStatefulSetV1Beta1Props {
+  /**
+   * @schema io.k8s.api.apps.v1beta1.StatefulSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec defines the desired identities of pods in this set.
+   *
+   * @schema io.k8s.api.apps.v1beta1.StatefulSet#spec
+   */
+  readonly spec?: StatefulSetSpec;
+
+}
+
+/**
+ * StatefulSetList is a collection of StatefulSets.
+ *
+ * @schema io.k8s.api.apps.v1beta1.StatefulSetList
+ */
+export interface KubeStatefulSetListV1Beta1Props {
+  /**
+   * @schema io.k8s.api.apps.v1beta1.StatefulSetList#items
+   */
+  readonly items: KubeStatefulSetV1Beta1Props[];
+
+  /**
+   * @schema io.k8s.api.apps.v1beta1.StatefulSetList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of ControllerRevision is deprecated by apps/v1/ControllerRevision. See the release notes for more information. ControllerRevision implements an immutable snapshot of state data. Clients are responsible for serializing and deserializing the objects that contain their internal state. Once a ControllerRevision has been successfully created, it can not be updated. The API Server will fail validation of all requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and rollback, this object is beta. However, it may be subject to name and representation changes in future releases, and clients should not depend on its stability. It is primarily for internal use by controllers.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ControllerRevision
+ */
+export interface KubeControllerRevisionV1Beta2Props {
+  /**
+   * Data is the serialized representation of the state.
+   *
+   * @schema io.k8s.api.apps.v1beta2.ControllerRevision#data
+   */
+  readonly data?: RawExtension;
+
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta2.ControllerRevision#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Revision indicates the revision of the state represented by Data.
+   *
+   * @schema io.k8s.api.apps.v1beta2.ControllerRevision#revision
+   */
+  readonly revision: number;
+
+}
+
+/**
+ * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ControllerRevisionList
+ */
+export interface KubeControllerRevisionListV1Beta2Props {
+  /**
+   * Items is the list of ControllerRevisions
+   *
+   * @schema io.k8s.api.apps.v1beta2.ControllerRevisionList#items
+   */
+  readonly items: KubeControllerRevisionV1Beta2Props[];
+
+  /**
+   * More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta2.ControllerRevisionList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet. See the release notes for more information. DaemonSet represents the configuration of a daemon set.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DaemonSet
+ */
+export interface KubeDaemonSetV1Beta2Props {
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta2.DaemonSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * The desired behavior of this daemon set. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.apps.v1beta2.DaemonSet#spec
+   */
+  readonly spec?: DaemonSetSpec;
+
+}
+
+/**
+ * DaemonSetList is a collection of daemon sets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DaemonSetList
+ */
+export interface KubeDaemonSetListV1Beta2Props {
+  /**
+   * A list of daemon sets.
+   *
+   * @schema io.k8s.api.apps.v1beta2.DaemonSetList#items
+   */
+  readonly items: KubeDaemonSetV1Beta2Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta2.DaemonSetList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of Deployment is deprecated by apps/v1/Deployment. See the release notes for more information. Deployment enables declarative updates for Pods and ReplicaSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.Deployment
+ */
+export interface KubeDeploymentV1Beta2Props {
+  /**
+   * Standard object metadata.
+   *
+   * @schema io.k8s.api.apps.v1beta2.Deployment#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired behavior of the Deployment.
+   *
+   * @schema io.k8s.api.apps.v1beta2.Deployment#spec
+   */
+  readonly spec?: DeploymentSpec;
+
+}
+
+/**
+ * DeploymentList is a list of Deployments.
+ *
+ * @schema io.k8s.api.apps.v1beta2.DeploymentList
+ */
+export interface KubeDeploymentListV1Beta2Props {
+  /**
+   * Items is the list of Deployments.
+   *
+   * @schema io.k8s.api.apps.v1beta2.DeploymentList#items
+   */
+  readonly items: KubeDeploymentV1Beta2Props[];
+
+  /**
+   * Standard list metadata.
+   *
+   * @schema io.k8s.api.apps.v1beta2.DeploymentList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1/ReplicaSet. See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ReplicaSet
+ */
+export interface KubeReplicaSetV1Beta2Props {
+  /**
+   * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.apps.v1beta2.ReplicaSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.apps.v1beta2.ReplicaSet#spec
+   */
+  readonly spec?: ReplicaSetSpec;
+
+}
+
+/**
+ * ReplicaSetList is a collection of ReplicaSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.ReplicaSetList
+ */
+export interface KubeReplicaSetListV1Beta2Props {
+  /**
+   * List of ReplicaSets. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
+   *
+   * @schema io.k8s.api.apps.v1beta2.ReplicaSetList#items
+   */
+  readonly items: KubeReplicaSetV1Beta2Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+   *
+   * @schema io.k8s.api.apps.v1beta2.ReplicaSetList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * Scale represents a scaling request for a resource.
+ *
+ * @schema io.k8s.api.apps.v1beta2.Scale
+ */
+export interface KubeScaleV1Beta2Props {
+  /**
+   * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
+   *
+   * @schema io.k8s.api.apps.v1beta2.Scale#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * defines the behavior of the scale. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
+   *
+   * @schema io.k8s.api.apps.v1beta2.Scale#spec
+   */
+  readonly spec?: ScaleSpec;
+
+}
+
+/**
+ * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1/StatefulSet. See the release notes for more information. StatefulSet represents a set of pods with consistent identities. Identities are defined as:
+ - Network: A single stable DNS and hostname.
+ - Storage: As many VolumeClaims as requested.
+The StatefulSet guarantees that a given network identity will always map to the same storage identity.
+ *
+ * @schema io.k8s.api.apps.v1beta2.StatefulSet
+ */
+export interface KubeStatefulSetV1Beta2Props {
+  /**
+   * @schema io.k8s.api.apps.v1beta2.StatefulSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec defines the desired identities of pods in this set.
+   *
+   * @schema io.k8s.api.apps.v1beta2.StatefulSet#spec
+   */
+  readonly spec?: StatefulSetSpec;
+
+}
+
+/**
+ * StatefulSetList is a collection of StatefulSets.
+ *
+ * @schema io.k8s.api.apps.v1beta2.StatefulSetList
+ */
+export interface KubeStatefulSetListV1Beta2Props {
+  /**
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetList#items
+   */
+  readonly items: KubeStatefulSetV1Beta2Props[];
+
+  /**
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetList#metadata
+   */
+  readonly metadata?: ListMeta;
 
 }
 
@@ -2480,7 +4323,7 @@ export interface ScaleOptions {
  *
  * @schema io.k8s.api.auditregistration.v1alpha1.AuditSink
  */
-export interface AuditSinkOptions {
+export interface KubeAuditSinkV1Alpha1Props {
   /**
    * @schema io.k8s.api.auditregistration.v1alpha1.AuditSink#metadata
    */
@@ -2500,13 +4343,13 @@ export interface AuditSinkOptions {
  *
  * @schema io.k8s.api.auditregistration.v1alpha1.AuditSinkList
  */
-export interface AuditSinkListOptions {
+export interface KubeAuditSinkListV1Alpha1Props {
   /**
    * List of audit configurations.
    *
    * @schema io.k8s.api.auditregistration.v1alpha1.AuditSinkList#items
    */
-  readonly items: AuditSink[];
+  readonly items: KubeAuditSinkV1Alpha1Props[];
 
   /**
    * @schema io.k8s.api.auditregistration.v1alpha1.AuditSinkList#metadata
@@ -2520,7 +4363,7 @@ export interface AuditSinkListOptions {
  *
  * @schema io.k8s.api.authentication.v1.TokenReview
  */
-export interface TokenReviewOptions {
+export interface KubeTokenReviewProps {
   /**
    * @schema io.k8s.api.authentication.v1.TokenReview#metadata
    */
@@ -2536,11 +4379,31 @@ export interface TokenReviewOptions {
 }
 
 /**
+ * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.
+ *
+ * @schema io.k8s.api.authentication.v1beta1.TokenReview
+ */
+export interface KubeTokenReviewV1Beta1Props {
+  /**
+   * @schema io.k8s.api.authentication.v1beta1.TokenReview#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec holds information about the request being evaluated
+   *
+   * @schema io.k8s.api.authentication.v1beta1.TokenReview#spec
+   */
+  readonly spec: TokenReviewSpec;
+
+}
+
+/**
  * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a given namespace. Having a namespace scoped resource makes it much easier to grant namespace scoped policy that includes permissions checking.
  *
  * @schema io.k8s.api.authorization.v1.LocalSubjectAccessReview
  */
-export interface LocalSubjectAccessReviewOptions {
+export interface KubeLocalSubjectAccessReviewProps {
   /**
    * @schema io.k8s.api.authorization.v1.LocalSubjectAccessReview#metadata
    */
@@ -2560,7 +4423,7 @@ export interface LocalSubjectAccessReviewOptions {
  *
  * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReview
  */
-export interface SelfSubjectAccessReviewOptions {
+export interface KubeSelfSubjectAccessReviewProps {
   /**
    * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReview#metadata
    */
@@ -2580,7 +4443,7 @@ export interface SelfSubjectAccessReviewOptions {
  *
  * @schema io.k8s.api.authorization.v1.SelfSubjectRulesReview
  */
-export interface SelfSubjectRulesReviewOptions {
+export interface KubeSelfSubjectRulesReviewProps {
   /**
    * @schema io.k8s.api.authorization.v1.SelfSubjectRulesReview#metadata
    */
@@ -2600,7 +4463,7 @@ export interface SelfSubjectRulesReviewOptions {
  *
  * @schema io.k8s.api.authorization.v1.SubjectAccessReview
  */
-export interface SubjectAccessReviewOptions {
+export interface KubeSubjectAccessReviewProps {
   /**
    * @schema io.k8s.api.authorization.v1.SubjectAccessReview#metadata
    */
@@ -2616,11 +4479,201 @@ export interface SubjectAccessReviewOptions {
 }
 
 /**
+ * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a given namespace. Having a namespace scoped resource makes it much easier to grant namespace scoped policy that includes permissions checking.
+ *
+ * @schema io.k8s.api.authorization.v1beta1.LocalSubjectAccessReview
+ */
+export interface KubeLocalSubjectAccessReviewV1Beta1Props {
+  /**
+   * @schema io.k8s.api.authorization.v1beta1.LocalSubjectAccessReview#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec holds information about the request being evaluated.  spec.namespace must be equal to the namespace you made the request against.  If empty, it is defaulted.
+   *
+   * @schema io.k8s.api.authorization.v1beta1.LocalSubjectAccessReview#spec
+   */
+  readonly spec: SubjectAccessReviewSpec;
+
+}
+
+/**
+ * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not filling in a spec.namespace means "in all namespaces".  Self is a special case, because users should always be able to check whether they can perform an action
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReview
+ */
+export interface KubeSelfSubjectAccessReviewV1Beta1Props {
+  /**
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReview#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec holds information about the request being evaluated.  user and groups must be empty
+   *
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReview#spec
+   */
+  readonly spec: SelfSubjectAccessReviewSpec;
+
+}
+
+/**
+ * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a namespace. The returned list of actions may be incomplete depending on the server's authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview should be used by UIs to show/hide actions, or to quickly let an end user reason about their permissions. It should NOT Be used by external systems to drive authorization decisions as this raises confused deputy, cache lifetime/revocation, and correctness concerns. SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization decisions to the API server.
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReview
+ */
+export interface KubeSelfSubjectRulesReviewV1Beta1Props {
+  /**
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReview#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec holds information about the request being evaluated.
+   *
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReview#spec
+   */
+  readonly spec: SelfSubjectRulesReviewSpec;
+
+}
+
+/**
+ * SubjectAccessReview checks whether or not a user or group can perform an action.
+ *
+ * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReview
+ */
+export interface KubeSubjectAccessReviewV1Beta1Props {
+  /**
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReview#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec holds information about the request being evaluated
+   *
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReview#spec
+   */
+  readonly spec: SubjectAccessReviewSpec;
+
+}
+
+/**
+ * configuration of a horizontal pod autoscaler.
+ *
+ * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler
+ */
+export interface KubeHorizontalPodAutoscalerProps {
+  /**
+   * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * behaviour of autoscaler. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+   *
+   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscaler#spec
+   */
+  readonly spec?: HorizontalPodAutoscalerSpec;
+
+}
+
+/**
+ * list of horizontal pod autoscaler objects.
+ *
+ * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList
+ */
+export interface KubeHorizontalPodAutoscalerListProps {
+  /**
+   * list of horizontal pod autoscaler objects.
+   *
+   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList#items
+   */
+  readonly items: KubeHorizontalPodAutoscalerProps[];
+
+  /**
+   * Standard list metadata.
+   *
+   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * Scale represents a scaling request for a resource.
+ *
+ * @schema io.k8s.api.autoscaling.v1.Scale
+ */
+export interface KubeScaleProps {
+  /**
+   * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+   *
+   * @schema io.k8s.api.autoscaling.v1.Scale#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * defines the behavior of the scale. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+   *
+   * @schema io.k8s.api.autoscaling.v1.Scale#spec
+   */
+  readonly spec?: ScaleSpec;
+
+}
+
+/**
+ * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscaler
+ */
+export interface KubeHorizontalPodAutoscalerV2Beta1Props {
+  /**
+   * metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscaler#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * spec is the specification for the behaviour of the autoscaler. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+   *
+   * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscaler#spec
+   */
+  readonly spec?: HorizontalPodAutoscalerSpec;
+
+}
+
+/**
+ * HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
+ *
+ * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscalerList
+ */
+export interface KubeHorizontalPodAutoscalerListV2Beta1Props {
+  /**
+   * items is the list of horizontal pod autoscaler objects.
+   *
+   * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscalerList#items
+   */
+  readonly items: KubeHorizontalPodAutoscalerV2Beta1Props[];
+
+  /**
+   * metadata is the standard list metadata.
+   *
+   * @schema io.k8s.api.autoscaling.v2beta1.HorizontalPodAutoscalerList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which automatically manages the replica count of any resource implementing the scale subresource based on the metrics specified.
  *
  * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscaler
  */
-export interface HorizontalPodAutoscalerOptions {
+export interface KubeHorizontalPodAutoscalerV2Beta2Props {
   /**
    * metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2638,22 +4691,22 @@ export interface HorizontalPodAutoscalerOptions {
 }
 
 /**
- * list of horizontal pod autoscaler objects.
+ * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
  *
- * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList
+ * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerList
  */
-export interface HorizontalPodAutoscalerListOptions {
+export interface KubeHorizontalPodAutoscalerListV2Beta2Props {
   /**
-   * list of horizontal pod autoscaler objects.
+   * items is the list of horizontal pod autoscaler objects.
    *
-   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList#items
+   * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerList#items
    */
-  readonly items: HorizontalPodAutoscaler[];
+  readonly items: KubeHorizontalPodAutoscalerV2Beta2Props[];
 
   /**
-   * Standard list metadata.
+   * metadata is the standard list metadata.
    *
-   * @schema io.k8s.api.autoscaling.v1.HorizontalPodAutoscalerList#metadata
+   * @schema io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerList#metadata
    */
   readonly metadata?: ListMeta;
 
@@ -2664,7 +4717,7 @@ export interface HorizontalPodAutoscalerListOptions {
  *
  * @schema io.k8s.api.batch.v1.Job
  */
-export interface JobOptions {
+export interface KubeJobProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2686,13 +4739,13 @@ export interface JobOptions {
  *
  * @schema io.k8s.api.batch.v1.JobList
  */
-export interface JobListOptions {
+export interface KubeJobListProps {
   /**
    * items is the list of Jobs.
    *
    * @schema io.k8s.api.batch.v1.JobList#items
    */
-  readonly items: Job[];
+  readonly items: KubeJobProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2708,7 +4761,7 @@ export interface JobListOptions {
  *
  * @schema io.k8s.api.batch.v1beta1.CronJob
  */
-export interface CronJobOptions {
+export interface KubeCronJobV1Beta1Props {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2730,13 +4783,13 @@ export interface CronJobOptions {
  *
  * @schema io.k8s.api.batch.v1beta1.CronJobList
  */
-export interface CronJobListOptions {
+export interface KubeCronJobListV1Beta1Props {
   /**
    * items is the list of CronJobs.
    *
    * @schema io.k8s.api.batch.v1beta1.CronJobList#items
    */
-  readonly items: CronJob[];
+  readonly items: KubeCronJobV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2748,11 +4801,55 @@ export interface CronJobListOptions {
 }
 
 /**
+ * CronJob represents the configuration of a single cron job.
+ *
+ * @schema io.k8s.api.batch.v2alpha1.CronJob
+ */
+export interface KubeCronJobV2Alpha1Props {
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.batch.v2alpha1.CronJob#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired behavior of a cron job, including the schedule. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.batch.v2alpha1.CronJob#spec
+   */
+  readonly spec?: CronJobSpec;
+
+}
+
+/**
+ * CronJobList is a collection of cron jobs.
+ *
+ * @schema io.k8s.api.batch.v2alpha1.CronJobList
+ */
+export interface KubeCronJobListV2Alpha1Props {
+  /**
+   * items is the list of CronJobs.
+   *
+   * @schema io.k8s.api.batch.v2alpha1.CronJobList#items
+   */
+  readonly items: KubeCronJobV2Alpha1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.batch.v2alpha1.CronJobList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * Describes a certificate signing request
  *
  * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequest
  */
-export interface CertificateSigningRequestOptions {
+export interface KubeCertificateSigningRequestV1Beta1Props {
   /**
    * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequest#metadata
    */
@@ -2770,11 +4867,11 @@ export interface CertificateSigningRequestOptions {
 /**
  * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequestList
  */
-export interface CertificateSigningRequestListOptions {
+export interface KubeCertificateSigningRequestListV1Beta1Props {
   /**
    * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequestList#items
    */
-  readonly items: CertificateSigningRequest[];
+  readonly items: KubeCertificateSigningRequestV1Beta1Props[];
 
   /**
    * @schema io.k8s.api.certificates.v1beta1.CertificateSigningRequestList#metadata
@@ -2788,7 +4885,7 @@ export interface CertificateSigningRequestListOptions {
  *
  * @schema io.k8s.api.coordination.v1.Lease
  */
-export interface LeaseOptions {
+export interface KubeLeaseProps {
   /**
    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2810,13 +4907,13 @@ export interface LeaseOptions {
  *
  * @schema io.k8s.api.coordination.v1.LeaseList
  */
-export interface LeaseListOptions {
+export interface KubeLeaseListProps {
   /**
    * Items is a list of schema objects.
    *
    * @schema io.k8s.api.coordination.v1.LeaseList#items
    */
-  readonly items: Lease[];
+  readonly items: KubeLeaseProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2828,11 +4925,55 @@ export interface LeaseListOptions {
 }
 
 /**
+ * Lease defines a lease concept.
+ *
+ * @schema io.k8s.api.coordination.v1beta1.Lease
+ */
+export interface KubeLeaseV1Beta1Props {
+  /**
+   * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.coordination.v1beta1.Lease#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the Lease. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.coordination.v1beta1.Lease#spec
+   */
+  readonly spec?: LeaseSpec;
+
+}
+
+/**
+ * LeaseList is a list of Lease objects.
+ *
+ * @schema io.k8s.api.coordination.v1beta1.LeaseList
+ */
+export interface KubeLeaseListV1Beta1Props {
+  /**
+   * Items is a list of schema objects.
+   *
+   * @schema io.k8s.api.coordination.v1beta1.LeaseList#items
+   */
+  readonly items: KubeLeaseV1Beta1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.coordination.v1beta1.LeaseList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * Binding ties one object to another; for example, a pod is bound to a node by a scheduler. Deprecated in 1.7, please use the bindings subresource of pods instead.
  *
  * @schema io.k8s.api.core.v1.Binding
  */
-export interface BindingOptions {
+export interface KubeBindingProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2854,7 +4995,7 @@ export interface BindingOptions {
  *
  * @schema io.k8s.api.core.v1.ComponentStatus
  */
-export interface ComponentStatusOptions {
+export interface KubeComponentStatusProps {
   /**
    * List of component conditions observed
    *
@@ -2876,13 +5017,13 @@ export interface ComponentStatusOptions {
  *
  * @schema io.k8s.api.core.v1.ComponentStatusList
  */
-export interface ComponentStatusListOptions {
+export interface KubeComponentStatusListProps {
   /**
    * List of ComponentStatus objects.
    *
    * @schema io.k8s.api.core.v1.ComponentStatusList#items
    */
-  readonly items: ComponentStatus[];
+  readonly items: KubeComponentStatusProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -2898,7 +5039,7 @@ export interface ComponentStatusListOptions {
  *
  * @schema io.k8s.api.core.v1.ConfigMap
  */
-export interface ConfigMapOptions {
+export interface KubeConfigMapProps {
   /**
    * BinaryData contains the binary data. Each key must consist of alphanumeric characters, '-', '_' or '.'. BinaryData can contain byte sequences that are not in the UTF-8 range. The keys stored in BinaryData must not overlap with the ones in the Data field, this is enforced during validation process. Using this field will require 1.10+ apiserver and kubelet.
    *
@@ -2927,13 +5068,13 @@ export interface ConfigMapOptions {
  *
  * @schema io.k8s.api.core.v1.ConfigMapList
  */
-export interface ConfigMapListOptions {
+export interface KubeConfigMapListProps {
   /**
    * Items is the list of ConfigMaps.
    *
    * @schema io.k8s.api.core.v1.ConfigMapList#items
    */
-  readonly items: ConfigMap[];
+  readonly items: KubeConfigMapProps[];
 
   /**
    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -2960,7 +5101,7 @@ export interface ConfigMapListOptions {
  *
  * @schema io.k8s.api.core.v1.Endpoints
  */
-export interface EndpointsOptions {
+export interface KubeEndpointsProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -2982,13 +5123,13 @@ export interface EndpointsOptions {
  *
  * @schema io.k8s.api.core.v1.EndpointsList
  */
-export interface EndpointsListOptions {
+export interface KubeEndpointsListProps {
   /**
    * List of endpoints.
    *
    * @schema io.k8s.api.core.v1.EndpointsList#items
    */
-  readonly items: Endpoints[];
+  readonly items: KubeEndpointsProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3004,7 +5145,7 @@ export interface EndpointsListOptions {
  *
  * @schema io.k8s.api.core.v1.Event
  */
-export interface EventOptions {
+export interface KubeEventProps {
   /**
    * What action was taken/failed regarding to the Regarding object.
    *
@@ -3117,13 +5258,13 @@ export interface EventOptions {
  *
  * @schema io.k8s.api.core.v1.EventList
  */
-export interface EventListOptions {
+export interface KubeEventListProps {
   /**
    * List of events
    *
    * @schema io.k8s.api.core.v1.EventList#items
    */
-  readonly items: Event[];
+  readonly items: KubeEventProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3139,7 +5280,7 @@ export interface EventListOptions {
  *
  * @schema io.k8s.api.core.v1.LimitRange
  */
-export interface LimitRangeOptions {
+export interface KubeLimitRangeProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3161,13 +5302,13 @@ export interface LimitRangeOptions {
  *
  * @schema io.k8s.api.core.v1.LimitRangeList
  */
-export interface LimitRangeListOptions {
+export interface KubeLimitRangeListProps {
   /**
    * Items is a list of LimitRange objects. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
    *
    * @schema io.k8s.api.core.v1.LimitRangeList#items
    */
-  readonly items: LimitRange[];
+  readonly items: KubeLimitRangeProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3183,7 +5324,7 @@ export interface LimitRangeListOptions {
  *
  * @schema io.k8s.api.core.v1.Namespace
  */
-export interface NamespaceOptions {
+export interface KubeNamespaceProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3205,13 +5346,13 @@ export interface NamespaceOptions {
  *
  * @schema io.k8s.api.core.v1.NamespaceList
  */
-export interface NamespaceListOptions {
+export interface KubeNamespaceListProps {
   /**
    * Items is the list of Namespace objects in the list. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
    *
    * @schema io.k8s.api.core.v1.NamespaceList#items
    */
-  readonly items: Namespace[];
+  readonly items: KubeNamespaceProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3227,7 +5368,7 @@ export interface NamespaceListOptions {
  *
  * @schema io.k8s.api.core.v1.Node
  */
-export interface NodeOptions {
+export interface KubeNodeProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3249,13 +5390,13 @@ export interface NodeOptions {
  *
  * @schema io.k8s.api.core.v1.NodeList
  */
-export interface NodeListOptions {
+export interface KubeNodeListProps {
   /**
    * List of nodes
    *
    * @schema io.k8s.api.core.v1.NodeList#items
    */
-  readonly items: Node[];
+  readonly items: KubeNodeProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3271,7 +5412,7 @@ export interface NodeListOptions {
  *
  * @schema io.k8s.api.core.v1.PersistentVolume
  */
-export interface PersistentVolumeOptions {
+export interface KubePersistentVolumeProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3293,7 +5434,7 @@ export interface PersistentVolumeOptions {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeClaim
  */
-export interface PersistentVolumeClaimOptions {
+export interface KubePersistentVolumeClaimProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3315,13 +5456,13 @@ export interface PersistentVolumeClaimOptions {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeClaimList
  */
-export interface PersistentVolumeClaimListOptions {
+export interface KubePersistentVolumeClaimListProps {
   /**
    * A list of persistent volume claims. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
    *
    * @schema io.k8s.api.core.v1.PersistentVolumeClaimList#items
    */
-  readonly items: PersistentVolumeClaim[];
+  readonly items: KubePersistentVolumeClaimProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3337,13 +5478,13 @@ export interface PersistentVolumeClaimListOptions {
  *
  * @schema io.k8s.api.core.v1.PersistentVolumeList
  */
-export interface PersistentVolumeListOptions {
+export interface KubePersistentVolumeListProps {
   /**
    * List of persistent volumes. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
    *
    * @schema io.k8s.api.core.v1.PersistentVolumeList#items
    */
-  readonly items: PersistentVolume[];
+  readonly items: KubePersistentVolumeProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3359,7 +5500,7 @@ export interface PersistentVolumeListOptions {
  *
  * @schema io.k8s.api.core.v1.Pod
  */
-export interface PodOptions {
+export interface KubePodProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3381,13 +5522,13 @@ export interface PodOptions {
  *
  * @schema io.k8s.api.core.v1.PodList
  */
-export interface PodListOptions {
+export interface KubePodListProps {
   /**
    * List of pods. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md
    *
    * @schema io.k8s.api.core.v1.PodList#items
    */
-  readonly items: Pod[];
+  readonly items: KubePodProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3403,7 +5544,7 @@ export interface PodListOptions {
  *
  * @schema io.k8s.api.core.v1.PodTemplate
  */
-export interface PodTemplateOptions {
+export interface KubePodTemplateProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3425,13 +5566,13 @@ export interface PodTemplateOptions {
  *
  * @schema io.k8s.api.core.v1.PodTemplateList
  */
-export interface PodTemplateListOptions {
+export interface KubePodTemplateListProps {
   /**
    * List of pod templates
    *
    * @schema io.k8s.api.core.v1.PodTemplateList#items
    */
-  readonly items: PodTemplate[];
+  readonly items: KubePodTemplateProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3447,7 +5588,7 @@ export interface PodTemplateListOptions {
  *
  * @schema io.k8s.api.core.v1.ReplicationController
  */
-export interface ReplicationControllerOptions {
+export interface KubeReplicationControllerProps {
   /**
    * If the Labels of a ReplicationController are empty, they are defaulted to be the same as the Pod(s) that the replication controller manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3469,13 +5610,13 @@ export interface ReplicationControllerOptions {
  *
  * @schema io.k8s.api.core.v1.ReplicationControllerList
  */
-export interface ReplicationControllerListOptions {
+export interface KubeReplicationControllerListProps {
   /**
    * List of replication controllers. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
    *
    * @schema io.k8s.api.core.v1.ReplicationControllerList#items
    */
-  readonly items: ReplicationController[];
+  readonly items: KubeReplicationControllerProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3491,7 +5632,7 @@ export interface ReplicationControllerListOptions {
  *
  * @schema io.k8s.api.core.v1.ResourceQuota
  */
-export interface ResourceQuotaOptions {
+export interface KubeResourceQuotaProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3513,13 +5654,13 @@ export interface ResourceQuotaOptions {
  *
  * @schema io.k8s.api.core.v1.ResourceQuotaList
  */
-export interface ResourceQuotaListOptions {
+export interface KubeResourceQuotaListProps {
   /**
    * Items is a list of ResourceQuota objects. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/
    *
    * @schema io.k8s.api.core.v1.ResourceQuotaList#items
    */
-  readonly items: ResourceQuota[];
+  readonly items: KubeResourceQuotaProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3535,7 +5676,7 @@ export interface ResourceQuotaListOptions {
  *
  * @schema io.k8s.api.core.v1.Secret
  */
-export interface SecretOptions {
+export interface KubeSecretProps {
   /**
    * Data contains the secret data. Each key must consist of alphanumeric characters, '-', '_' or '.'. The serialized form of the secret data is a base64 encoded string, representing the arbitrary (possibly non-string) data value here. Described in https://tools.ietf.org/html/rfc4648#section-4
    *
@@ -3571,13 +5712,13 @@ export interface SecretOptions {
  *
  * @schema io.k8s.api.core.v1.SecretList
  */
-export interface SecretListOptions {
+export interface KubeSecretListProps {
   /**
    * Items is a list of secret objects. More info: https://kubernetes.io/docs/concepts/configuration/secret
    *
    * @schema io.k8s.api.core.v1.SecretList#items
    */
-  readonly items: Secret[];
+  readonly items: KubeSecretProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3593,7 +5734,7 @@ export interface SecretListOptions {
  *
  * @schema io.k8s.api.core.v1.Service
  */
-export interface ServiceOptions {
+export interface KubeServiceProps {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3615,7 +5756,7 @@ export interface ServiceOptions {
  *
  * @schema io.k8s.api.core.v1.ServiceAccount
  */
-export interface ServiceAccountOptions {
+export interface KubeServiceAccountProps {
   /**
    * AutomountServiceAccountToken indicates whether pods running as this service account should have an API token automatically mounted. Can be overridden at the pod level.
    *
@@ -3651,13 +5792,13 @@ export interface ServiceAccountOptions {
  *
  * @schema io.k8s.api.core.v1.ServiceAccountList
  */
-export interface ServiceAccountListOptions {
+export interface KubeServiceAccountListProps {
   /**
    * List of ServiceAccounts. More info: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
    *
    * @schema io.k8s.api.core.v1.ServiceAccountList#items
    */
-  readonly items: ServiceAccount[];
+  readonly items: KubeServiceAccountProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3673,13 +5814,13 @@ export interface ServiceAccountListOptions {
  *
  * @schema io.k8s.api.core.v1.ServiceList
  */
-export interface ServiceListOptions {
+export interface KubeServiceListProps {
   /**
    * List of services
    *
    * @schema io.k8s.api.core.v1.ServiceList#items
    */
-  readonly items: Service[];
+  readonly items: KubeServiceProps[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
@@ -3691,11 +5832,188 @@ export interface ServiceListOptions {
 }
 
 /**
+ * Event is a report of an event somewhere in the cluster. It generally denotes some state change in the system.
+ *
+ * @schema io.k8s.api.events.v1beta1.Event
+ */
+export interface KubeEventV1Beta1Props {
+  /**
+   * What action was taken/failed regarding to the regarding object.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#action
+   */
+  readonly action?: string;
+
+  /**
+   * Deprecated field assuring backward compatibility with core.v1 Event type
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#deprecatedCount
+   */
+  readonly deprecatedCount?: number;
+
+  /**
+   * Deprecated field assuring backward compatibility with core.v1 Event type
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#deprecatedFirstTimestamp
+   */
+  readonly deprecatedFirstTimestamp?: Date;
+
+  /**
+   * Deprecated field assuring backward compatibility with core.v1 Event type
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#deprecatedLastTimestamp
+   */
+  readonly deprecatedLastTimestamp?: Date;
+
+  /**
+   * Deprecated field assuring backward compatibility with core.v1 Event type
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#deprecatedSource
+   */
+  readonly deprecatedSource?: EventSource;
+
+  /**
+   * Required. Time when this Event was first observed.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#eventTime
+   */
+  readonly eventTime: Date;
+
+  /**
+   * @schema io.k8s.api.events.v1beta1.Event#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Optional. A human-readable description of the status of this operation. Maximal length of the note is 1kB, but libraries should be prepared to handle values up to 64kB.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#note
+   */
+  readonly note?: string;
+
+  /**
+   * Why the action was taken.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#reason
+   */
+  readonly reason?: string;
+
+  /**
+   * The object this Event is about. In most cases it's an Object reporting controller implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted because it acts on some changes in a ReplicaSet object.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#regarding
+   */
+  readonly regarding?: ObjectReference;
+
+  /**
+   * Optional secondary object for more complex actions. E.g. when regarding object triggers a creation or deletion of related object.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#related
+   */
+  readonly related?: ObjectReference;
+
+  /**
+   * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#reportingController
+   */
+  readonly reportingController?: string;
+
+  /**
+   * ID of the controller instance, e.g. `kubelet-xyzf`.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#reportingInstance
+   */
+  readonly reportingInstance?: string;
+
+  /**
+   * Data about the Event series this event represents or nil if it's a singleton Event.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#series
+   */
+  readonly series?: EventSeries;
+
+  /**
+   * Type of this event (Normal, Warning), new types could be added in the future.
+   *
+   * @schema io.k8s.api.events.v1beta1.Event#type
+   */
+  readonly type?: string;
+
+}
+
+/**
+ * EventList is a list of Event objects.
+ *
+ * @schema io.k8s.api.events.v1beta1.EventList
+ */
+export interface KubeEventListV1Beta1Props {
+  /**
+   * Items is a list of schema objects.
+   *
+   * @schema io.k8s.api.events.v1beta1.EventList#items
+   */
+  readonly items: KubeEventV1Beta1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.events.v1beta1.EventList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1beta2/DaemonSet. See the release notes for more information. DaemonSet represents the configuration of a daemon set.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSet
+ */
+export interface KubeDaemonSetV1Beta1Props {
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * The desired behavior of this daemon set. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSet#spec
+   */
+  readonly spec?: DaemonSetSpec;
+
+}
+
+/**
+ * DaemonSetList is a collection of daemon sets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSetList
+ */
+export interface KubeDaemonSetListV1Beta1Props {
+  /**
+   * A list of daemon sets.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetList#items
+   */
+  readonly items: KubeDaemonSetV1Beta1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * Ingress is a collection of rules that allow inbound connections to reach the endpoints defined by a backend. An Ingress can be configured to give services externally-reachable urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.
  *
  * @schema io.k8s.api.networking.v1beta1.Ingress
  */
-export interface IngressOptions {
+export interface KubeIngressV1Beta1Props {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3717,13 +6035,13 @@ export interface IngressOptions {
  *
  * @schema io.k8s.api.networking.v1beta1.IngressList
  */
-export interface IngressListOptions {
+export interface KubeIngressListV1Beta1Props {
   /**
    * Items is the list of Ingress.
    *
    * @schema io.k8s.api.networking.v1beta1.IngressList#items
    */
-  readonly items: Ingress[];
+  readonly items: KubeIngressV1Beta1Props[];
 
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -3735,44 +6053,44 @@ export interface IngressListOptions {
 }
 
 /**
- * NetworkPolicy describes what network traffic is allowed for a set of Pods
+ * DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic is allowed for a set of Pods
  *
- * @schema io.k8s.api.networking.v1.NetworkPolicy
+ * @schema io.k8s.api.extensions.v1beta1.NetworkPolicy
  */
-export interface NetworkPolicyOptions {
+export interface KubeNetworkPolicyV1Beta1Props {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
    *
-   * @schema io.k8s.api.networking.v1.NetworkPolicy#metadata
+   * @schema io.k8s.api.extensions.v1beta1.NetworkPolicy#metadata
    */
   readonly metadata?: ObjectMeta;
 
   /**
    * Specification of the desired behavior for this NetworkPolicy.
    *
-   * @schema io.k8s.api.networking.v1.NetworkPolicy#spec
+   * @schema io.k8s.api.extensions.v1beta1.NetworkPolicy#spec
    */
   readonly spec?: NetworkPolicySpec;
 
 }
 
 /**
- * NetworkPolicyList is a list of NetworkPolicy objects.
+ * DEPRECATED 1.9 - This group version of NetworkPolicyList is deprecated by networking/v1/NetworkPolicyList. Network Policy List is a list of NetworkPolicy objects.
  *
- * @schema io.k8s.api.networking.v1.NetworkPolicyList
+ * @schema io.k8s.api.extensions.v1beta1.NetworkPolicyList
  */
-export interface NetworkPolicyListOptions {
+export interface KubeNetworkPolicyListV1Beta1Props {
   /**
    * Items is a list of schema objects.
    *
-   * @schema io.k8s.api.networking.v1.NetworkPolicyList#items
+   * @schema io.k8s.api.extensions.v1beta1.NetworkPolicyList#items
    */
-  readonly items: NetworkPolicy[];
+  readonly items: KubeNetworkPolicyV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
    *
-   * @schema io.k8s.api.networking.v1.NetworkPolicyList#metadata
+   * @schema io.k8s.api.extensions.v1beta1.NetworkPolicyList#metadata
    */
   readonly metadata?: ListMeta;
 
@@ -3783,7 +6101,7 @@ export interface NetworkPolicyListOptions {
  *
  * @schema io.k8s.api.policy.v1beta1.PodSecurityPolicy
  */
-export interface PodSecurityPolicyOptions {
+export interface KubePodSecurityPolicyV1Beta1Props {
   /**
    * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -3805,13 +6123,13 @@ export interface PodSecurityPolicyOptions {
  *
  * @schema io.k8s.api.policy.v1beta1.PodSecurityPolicyList
  */
-export interface PodSecurityPolicyListOptions {
+export interface KubePodSecurityPolicyListV1Beta1Props {
   /**
    * items is a list of schema objects.
    *
    * @schema io.k8s.api.policy.v1beta1.PodSecurityPolicyList#items
    */
-  readonly items: PodSecurityPolicy[];
+  readonly items: KubePodSecurityPolicyV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -3823,11 +6141,143 @@ export interface PodSecurityPolicyListOptions {
 }
 
 /**
+ * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1beta2/ReplicaSet. See the release notes for more information. ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.ReplicaSet
+ */
+export interface KubeReplicaSetV1Beta1Props {
+  /**
+   * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSet#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSet#spec
+   */
+  readonly spec?: ReplicaSetSpec;
+
+}
+
+/**
+ * ReplicaSetList is a collection of ReplicaSets.
+ *
+ * @schema io.k8s.api.extensions.v1beta1.ReplicaSetList
+ */
+export interface KubeReplicaSetListV1Beta1Props {
+  /**
+   * List of ReplicaSets. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
+   *
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetList#items
+   */
+  readonly items: KubeReplicaSetV1Beta1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+   *
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * NetworkPolicy describes what network traffic is allowed for a set of Pods
+ *
+ * @schema io.k8s.api.networking.v1.NetworkPolicy
+ */
+export interface KubeNetworkPolicyProps {
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.networking.v1.NetworkPolicy#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired behavior for this NetworkPolicy.
+   *
+   * @schema io.k8s.api.networking.v1.NetworkPolicy#spec
+   */
+  readonly spec?: NetworkPolicySpec;
+
+}
+
+/**
+ * NetworkPolicyList is a list of NetworkPolicy objects.
+ *
+ * @schema io.k8s.api.networking.v1.NetworkPolicyList
+ */
+export interface KubeNetworkPolicyListProps {
+  /**
+   * Items is a list of schema objects.
+   *
+   * @schema io.k8s.api.networking.v1.NetworkPolicyList#items
+   */
+  readonly items: KubeNetworkPolicyProps[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.networking.v1.NetworkPolicyList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * RuntimeClass defines a class of container runtime supported in the cluster. The RuntimeClass is used to determine which container runtime is used to run all containers in a pod. RuntimeClasses are (currently) manually defined by a user or cluster provisioner, and referenced in the PodSpec. The Kubelet is responsible for resolving the RuntimeClassName reference before running the pod.  For more details, see https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md
+ *
+ * @schema io.k8s.api.node.v1alpha1.RuntimeClass
+ */
+export interface KubeRuntimeClassV1Alpha1Props {
+  /**
+   * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.node.v1alpha1.RuntimeClass#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the RuntimeClass More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+   *
+   * @schema io.k8s.api.node.v1alpha1.RuntimeClass#spec
+   */
+  readonly spec: RuntimeClassSpec;
+
+}
+
+/**
+ * RuntimeClassList is a list of RuntimeClass objects.
+ *
+ * @schema io.k8s.api.node.v1alpha1.RuntimeClassList
+ */
+export interface KubeRuntimeClassListV1Alpha1Props {
+  /**
+   * Items is a list of schema objects.
+   *
+   * @schema io.k8s.api.node.v1alpha1.RuntimeClassList#items
+   */
+  readonly items: KubeRuntimeClassV1Alpha1Props[];
+
+  /**
+   * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.node.v1alpha1.RuntimeClassList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * RuntimeClass defines a class of container runtime supported in the cluster. The RuntimeClass is used to determine which container runtime is used to run all containers in a pod. RuntimeClasses are (currently) manually defined by a user or cluster provisioner, and referenced in the PodSpec. The Kubelet is responsible for resolving the RuntimeClassName reference before running the pod.  For more details, see https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md
  *
  * @schema io.k8s.api.node.v1beta1.RuntimeClass
  */
-export interface RuntimeClassOptions {
+export interface KubeRuntimeClassV1Beta1Props {
   /**
    * Handler specifies the underlying runtime and configuration that the CRI implementation will use to handle pods of this class. The possible values are specific to the node & CRI configuration.  It is assumed that all handlers are available on every node, and handlers of the same name are equivalent on every node. For example, a handler called "runc" might specify that the runc OCI runtime (using native Linux containers) will be used to run the containers in a pod. The Handler must conform to the DNS Label (RFC 1123) requirements, and is immutable.
    *
@@ -3849,13 +6299,13 @@ export interface RuntimeClassOptions {
  *
  * @schema io.k8s.api.node.v1beta1.RuntimeClassList
  */
-export interface RuntimeClassListOptions {
+export interface KubeRuntimeClassListV1Beta1Props {
   /**
    * Items is a list of schema objects.
    *
    * @schema io.k8s.api.node.v1beta1.RuntimeClassList#items
    */
-  readonly items: RuntimeClass[];
+  readonly items: KubeRuntimeClassV1Beta1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -3871,7 +6321,7 @@ export interface RuntimeClassListOptions {
  *
  * @schema io.k8s.api.policy.v1beta1.Eviction
  */
-export interface EvictionOptions {
+export interface KubeEvictionV1Beta1Props {
   /**
    * DeleteOptions may be provided
    *
@@ -3893,7 +6343,7 @@ export interface EvictionOptions {
  *
  * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudget
  */
-export interface PodDisruptionBudgetOptions {
+export interface KubePodDisruptionBudgetV1Beta1Props {
   /**
    * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudget#metadata
    */
@@ -3913,11 +6363,11 @@ export interface PodDisruptionBudgetOptions {
  *
  * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudgetList
  */
-export interface PodDisruptionBudgetListOptions {
+export interface KubePodDisruptionBudgetListV1Beta1Props {
   /**
    * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudgetList#items
    */
-  readonly items: PodDisruptionBudget[];
+  readonly items: KubePodDisruptionBudgetV1Beta1Props[];
 
   /**
    * @schema io.k8s.api.policy.v1beta1.PodDisruptionBudgetList#metadata
@@ -3931,7 +6381,7 @@ export interface PodDisruptionBudgetListOptions {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRole
  */
-export interface ClusterRoleOptions {
+export interface KubeClusterRoleProps {
   /**
    * AggregationRule is an optional field that describes how to build the Rules for this ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct changes to Rules will be stomped by the controller.
    *
@@ -3960,7 +6410,7 @@ export interface ClusterRoleOptions {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleBinding
  */
-export interface ClusterRoleBindingOptions {
+export interface KubeClusterRoleBindingProps {
   /**
    * Standard object's metadata.
    *
@@ -3989,13 +6439,13 @@ export interface ClusterRoleBindingOptions {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleBindingList
  */
-export interface ClusterRoleBindingListOptions {
+export interface KubeClusterRoleBindingListProps {
   /**
    * Items is a list of ClusterRoleBindings
    *
    * @schema io.k8s.api.rbac.v1.ClusterRoleBindingList#items
    */
-  readonly items: ClusterRoleBinding[];
+  readonly items: KubeClusterRoleBindingProps[];
 
   /**
    * Standard object's metadata.
@@ -4011,13 +6461,13 @@ export interface ClusterRoleBindingListOptions {
  *
  * @schema io.k8s.api.rbac.v1.ClusterRoleList
  */
-export interface ClusterRoleListOptions {
+export interface KubeClusterRoleListProps {
   /**
    * Items is a list of ClusterRoles
    *
    * @schema io.k8s.api.rbac.v1.ClusterRoleList#items
    */
-  readonly items: ClusterRole[];
+  readonly items: KubeClusterRoleProps[];
 
   /**
    * Standard object's metadata.
@@ -4033,7 +6483,7 @@ export interface ClusterRoleListOptions {
  *
  * @schema io.k8s.api.rbac.v1.Role
  */
-export interface RoleOptions {
+export interface KubeRoleProps {
   /**
    * Standard object's metadata.
    *
@@ -4055,7 +6505,7 @@ export interface RoleOptions {
  *
  * @schema io.k8s.api.rbac.v1.RoleBinding
  */
-export interface RoleBindingOptions {
+export interface KubeRoleBindingProps {
   /**
    * Standard object's metadata.
    *
@@ -4084,13 +6534,13 @@ export interface RoleBindingOptions {
  *
  * @schema io.k8s.api.rbac.v1.RoleBindingList
  */
-export interface RoleBindingListOptions {
+export interface KubeRoleBindingListProps {
   /**
    * Items is a list of RoleBindings
    *
    * @schema io.k8s.api.rbac.v1.RoleBindingList#items
    */
-  readonly items: RoleBinding[];
+  readonly items: KubeRoleBindingProps[];
 
   /**
    * Standard object's metadata.
@@ -4106,13 +6556,13 @@ export interface RoleBindingListOptions {
  *
  * @schema io.k8s.api.rbac.v1.RoleList
  */
-export interface RoleListOptions {
+export interface KubeRoleListProps {
   /**
    * Items is a list of Roles
    *
    * @schema io.k8s.api.rbac.v1.RoleList#items
    */
-  readonly items: Role[];
+  readonly items: KubeRoleProps[];
 
   /**
    * Standard object's metadata.
@@ -4124,11 +6574,405 @@ export interface RoleListOptions {
 }
 
 /**
+ * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRole
+ */
+export interface KubeClusterRoleV1Alpha1Props {
+  /**
+   * AggregationRule is an optional field that describes how to build the Rules for this ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct changes to Rules will be stomped by the controller.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRole#aggregationRule
+   */
+  readonly aggregationRule?: AggregationRule;
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRole#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Rules holds all the PolicyRules for this ClusterRole
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRole#rules
+   */
+  readonly rules?: PolicyRule[];
+
+}
+
+/**
+ * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a ClusterRole in the global namespace, and adds who information via Subject.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBinding
+ */
+export interface KubeClusterRoleBindingV1Alpha1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBinding#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * RoleRef can only reference a ClusterRole in the global namespace. If the RoleRef cannot be resolved, the Authorizer must return an error.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBinding#roleRef
+   */
+  readonly roleRef: RoleRef;
+
+  /**
+   * Subjects holds references to the objects the role applies to.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBinding#subjects
+   */
+  readonly subjects?: Subject[];
+
+}
+
+/**
+ * ClusterRoleBindingList is a collection of ClusterRoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBindingList
+ */
+export interface KubeClusterRoleBindingListV1Alpha1Props {
+  /**
+   * Items is a list of ClusterRoleBindings
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBindingList#items
+   */
+  readonly items: KubeClusterRoleBindingV1Alpha1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleBindingList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * ClusterRoleList is a collection of ClusterRoles
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleList
+ */
+export interface KubeClusterRoleListV1Alpha1Props {
+  /**
+   * Items is a list of ClusterRoles
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleList#items
+   */
+  readonly items: KubeClusterRoleV1Alpha1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.ClusterRoleList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.Role
+ */
+export interface KubeRoleV1Alpha1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.Role#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Rules holds all the PolicyRules for this Role
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.Role#rules
+   */
+  readonly rules?: PolicyRule[];
+
+}
+
+/**
+ * RoleBinding references a role, but does not contain it.  It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleBinding
+ */
+export interface KubeRoleBindingV1Alpha1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleBinding#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * RoleRef can reference a Role in the current namespace or a ClusterRole in the global namespace. If the RoleRef cannot be resolved, the Authorizer must return an error.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleBinding#roleRef
+   */
+  readonly roleRef: RoleRef;
+
+  /**
+   * Subjects holds references to the objects the role applies to.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleBinding#subjects
+   */
+  readonly subjects?: Subject[];
+
+}
+
+/**
+ * RoleBindingList is a collection of RoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleBindingList
+ */
+export interface KubeRoleBindingListV1Alpha1Props {
+  /**
+   * Items is a list of RoleBindings
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleBindingList#items
+   */
+  readonly items: KubeRoleBindingV1Alpha1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleBindingList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * RoleList is a collection of Roles
+ *
+ * @schema io.k8s.api.rbac.v1alpha1.RoleList
+ */
+export interface KubeRoleListV1Alpha1Props {
+  /**
+   * Items is a list of Roles
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleList#items
+   */
+  readonly items: KubeRoleV1Alpha1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1alpha1.RoleList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRole
+ */
+export interface KubeClusterRoleV1Beta1Props {
+  /**
+   * AggregationRule is an optional field that describes how to build the Rules for this ClusterRole. If AggregationRule is set, then the Rules are controller managed and direct changes to Rules will be stomped by the controller.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRole#aggregationRule
+   */
+  readonly aggregationRule?: AggregationRule;
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRole#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Rules holds all the PolicyRules for this ClusterRole
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRole#rules
+   */
+  readonly rules?: PolicyRule[];
+
+}
+
+/**
+ * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a ClusterRole in the global namespace, and adds who information via Subject.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBinding
+ */
+export interface KubeClusterRoleBindingV1Beta1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBinding#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * RoleRef can only reference a ClusterRole in the global namespace. If the RoleRef cannot be resolved, the Authorizer must return an error.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBinding#roleRef
+   */
+  readonly roleRef: RoleRef;
+
+  /**
+   * Subjects holds references to the objects the role applies to.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBinding#subjects
+   */
+  readonly subjects?: Subject[];
+
+}
+
+/**
+ * ClusterRoleBindingList is a collection of ClusterRoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBindingList
+ */
+export interface KubeClusterRoleBindingListV1Beta1Props {
+  /**
+   * Items is a list of ClusterRoleBindings
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBindingList#items
+   */
+  readonly items: KubeClusterRoleBindingV1Beta1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleBindingList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * ClusterRoleList is a collection of ClusterRoles
+ *
+ * @schema io.k8s.api.rbac.v1beta1.ClusterRoleList
+ */
+export interface KubeClusterRoleListV1Beta1Props {
+  /**
+   * Items is a list of ClusterRoles
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleList#items
+   */
+  readonly items: KubeClusterRoleV1Beta1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.ClusterRoleList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.Role
+ */
+export interface KubeRoleV1Beta1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.Role#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Rules holds all the PolicyRules for this Role
+   *
+   * @schema io.k8s.api.rbac.v1beta1.Role#rules
+   */
+  readonly rules?: PolicyRule[];
+
+}
+
+/**
+ * RoleBinding references a role, but does not contain it.  It can reference a Role in the same namespace or a ClusterRole in the global namespace. It adds who information via Subjects and namespace information by which namespace it exists in.  RoleBindings in a given namespace only have effect in that namespace.
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleBinding
+ */
+export interface KubeRoleBindingV1Beta1Props {
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleBinding#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * RoleRef can reference a Role in the current namespace or a ClusterRole in the global namespace. If the RoleRef cannot be resolved, the Authorizer must return an error.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleBinding#roleRef
+   */
+  readonly roleRef: RoleRef;
+
+  /**
+   * Subjects holds references to the objects the role applies to.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleBinding#subjects
+   */
+  readonly subjects?: Subject[];
+
+}
+
+/**
+ * RoleBindingList is a collection of RoleBindings
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleBindingList
+ */
+export interface KubeRoleBindingListV1Beta1Props {
+  /**
+   * Items is a list of RoleBindings
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleBindingList#items
+   */
+  readonly items: KubeRoleBindingV1Beta1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleBindingList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * RoleList is a collection of Roles
+ *
+ * @schema io.k8s.api.rbac.v1beta1.RoleList
+ */
+export interface KubeRoleListV1Beta1Props {
+  /**
+   * Items is a list of Roles
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleList#items
+   */
+  readonly items: KubeRoleV1Beta1Props[];
+
+  /**
+   * Standard object's metadata.
+   *
+   * @schema io.k8s.api.rbac.v1beta1.RoleList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
  *
  * @schema io.k8s.api.scheduling.v1.PriorityClass
  */
-export interface PriorityClassOptions {
+export interface KubePriorityClassProps {
   /**
    * description is an arbitrary string that usually provides guidelines on when this priority class should be used.
    *
@@ -4172,13 +7016,13 @@ export interface PriorityClassOptions {
  *
  * @schema io.k8s.api.scheduling.v1.PriorityClassList
  */
-export interface PriorityClassListOptions {
+export interface KubePriorityClassListProps {
   /**
    * items is the list of PriorityClasses
    *
    * @schema io.k8s.api.scheduling.v1.PriorityClassList#items
    */
-  readonly items: PriorityClass[];
+  readonly items: KubePriorityClassProps[];
 
   /**
    * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -4190,11 +7034,143 @@ export interface PriorityClassListOptions {
 }
 
 /**
+ * DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
+ *
+ * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass
+ */
+export interface KubePriorityClassV1Alpha1Props {
+  /**
+   * description is an arbitrary string that usually provides guidelines on when this priority class should be used.
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass#description
+   */
+  readonly description?: string;
+
+  /**
+   * globalDefault specifies whether this PriorityClass should be considered as the default priority for pods that do not have any priority class. Only one PriorityClass can be marked as `globalDefault`. However, if more than one PriorityClasses exists with their `globalDefault` field set to true, the smallest value of such global default PriorityClasses will be used as the default priority.
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass#globalDefault
+   */
+  readonly globalDefault?: boolean;
+
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.
+   *
+   * @default PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass#preemptionPolicy
+   */
+  readonly preemptionPolicy?: string;
+
+  /**
+   * The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their pod spec.
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClass#value
+   */
+  readonly value: number;
+
+}
+
+/**
+ * PriorityClassList is a collection of priority classes.
+ *
+ * @schema io.k8s.api.scheduling.v1alpha1.PriorityClassList
+ */
+export interface KubePriorityClassListV1Alpha1Props {
+  /**
+   * items is the list of PriorityClasses
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClassList#items
+   */
+  readonly items: KubePriorityClassV1Alpha1Props[];
+
+  /**
+   * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.scheduling.v1alpha1.PriorityClassList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * DEPRECATED - This group version of PriorityClass is deprecated by scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name to the priority integer value. The value can be any valid integer.
+ *
+ * @schema io.k8s.api.scheduling.v1beta1.PriorityClass
+ */
+export interface KubePriorityClassV1Beta1Props {
+  /**
+   * description is an arbitrary string that usually provides guidelines on when this priority class should be used.
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClass#description
+   */
+  readonly description?: string;
+
+  /**
+   * globalDefault specifies whether this PriorityClass should be considered as the default priority for pods that do not have any priority class. Only one PriorityClass can be marked as `globalDefault`. However, if more than one PriorityClasses exists with their `globalDefault` field set to true, the smallest value of such global default PriorityClasses will be used as the default priority.
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClass#globalDefault
+   */
+  readonly globalDefault?: boolean;
+
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClass#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * PreemptionPolicy is the Policy for preempting pods with lower priority. One of Never, PreemptLowerPriority. Defaults to PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.
+   *
+   * @default PreemptLowerPriority if unset. This field is alpha-level and is only honored by servers that enable the NonPreemptingPriority feature.
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClass#preemptionPolicy
+   */
+  readonly preemptionPolicy?: string;
+
+  /**
+   * The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their pod spec.
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClass#value
+   */
+  readonly value: number;
+
+}
+
+/**
+ * PriorityClassList is a collection of priority classes.
+ *
+ * @schema io.k8s.api.scheduling.v1beta1.PriorityClassList
+ */
+export interface KubePriorityClassListV1Beta1Props {
+  /**
+   * items is the list of PriorityClasses
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClassList#items
+   */
+  readonly items: KubePriorityClassV1Beta1Props[];
+
+  /**
+   * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.scheduling.v1beta1.PriorityClassList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * PodPreset is a policy resource that defines additional runtime requirements for a Pod.
  *
  * @schema io.k8s.api.settings.v1alpha1.PodPreset
  */
-export interface PodPresetOptions {
+export interface KubePodPresetV1Alpha1Props {
   /**
    * @schema io.k8s.api.settings.v1alpha1.PodPreset#metadata
    */
@@ -4212,13 +7188,13 @@ export interface PodPresetOptions {
  *
  * @schema io.k8s.api.settings.v1alpha1.PodPresetList
  */
-export interface PodPresetListOptions {
+export interface KubePodPresetListV1Alpha1Props {
   /**
    * Items is a list of schema objects.
    *
    * @schema io.k8s.api.settings.v1alpha1.PodPresetList#items
    */
-  readonly items: PodPreset[];
+  readonly items: KubePodPresetV1Alpha1Props[];
 
   /**
    * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
@@ -4236,7 +7212,7 @@ StorageClasses are non-namespaced; the name of the storage class according to et
  *
  * @schema io.k8s.api.storage.v1.StorageClass
  */
-export interface StorageClassOptions {
+export interface KubeStorageClassProps {
   /**
    * AllowVolumeExpansion shows whether the storage class allow volume expand
    *
@@ -4301,13 +7277,13 @@ export interface StorageClassOptions {
  *
  * @schema io.k8s.api.storage.v1.StorageClassList
  */
-export interface StorageClassListOptions {
+export interface KubeStorageClassListProps {
   /**
    * Items is the list of StorageClasses
    *
    * @schema io.k8s.api.storage.v1.StorageClassList#items
    */
-  readonly items: StorageClass[];
+  readonly items: KubeStorageClassProps[];
 
   /**
    * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -4325,7 +7301,7 @@ VolumeAttachment objects are non-namespaced.
  *
  * @schema io.k8s.api.storage.v1.VolumeAttachment
  */
-export interface VolumeAttachmentOptions {
+export interface KubeVolumeAttachmentProps {
   /**
    * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -4347,13 +7323,13 @@ export interface VolumeAttachmentOptions {
  *
  * @schema io.k8s.api.storage.v1.VolumeAttachmentList
  */
-export interface VolumeAttachmentListOptions {
+export interface KubeVolumeAttachmentListProps {
   /**
    * Items is the list of VolumeAttachments
    *
    * @schema io.k8s.api.storage.v1.VolumeAttachmentList#items
    */
-  readonly items: VolumeAttachment[];
+  readonly items: KubeVolumeAttachmentProps[];
 
   /**
    * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -4365,11 +7341,57 @@ export interface VolumeAttachmentListOptions {
 }
 
 /**
+ * VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.
+
+VolumeAttachment objects are non-namespaced.
+ *
+ * @schema io.k8s.api.storage.v1alpha1.VolumeAttachment
+ */
+export interface KubeVolumeAttachmentV1Alpha1Props {
+  /**
+   * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1alpha1.VolumeAttachment#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes system.
+   *
+   * @schema io.k8s.api.storage.v1alpha1.VolumeAttachment#spec
+   */
+  readonly spec: VolumeAttachmentSpec;
+
+}
+
+/**
+ * VolumeAttachmentList is a collection of VolumeAttachment objects.
+ *
+ * @schema io.k8s.api.storage.v1alpha1.VolumeAttachmentList
+ */
+export interface KubeVolumeAttachmentListV1Alpha1Props {
+  /**
+   * Items is the list of VolumeAttachments
+   *
+   * @schema io.k8s.api.storage.v1alpha1.VolumeAttachmentList#items
+   */
+  readonly items: KubeVolumeAttachmentV1Alpha1Props[];
+
+  /**
+   * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1alpha1.VolumeAttachmentList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * CSIDriver captures information about a Container Storage Interface (CSI) volume driver deployed on the cluster. CSI drivers do not need to create the CSIDriver object directly. Instead they may use the cluster-driver-registrar sidecar container. When deployed with a CSI driver it automatically creates a CSIDriver object representing the driver. Kubernetes attach detach controller uses this object to determine whether attach is required. Kubelet uses this object to determine whether pod information needs to be passed on mount. CSIDriver objects are non-namespaced.
  *
  * @schema io.k8s.api.storage.v1beta1.CSIDriver
  */
-export interface CsiDriverOptions {
+export interface KubeCsiDriverV1Beta1Props {
   /**
    * Standard object metadata. metadata.Name indicates the name of the CSI driver that this object refers to; it MUST be the same name returned by the CSI GetPluginName() call for that driver. The driver name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), dots (.), and alphanumerics between. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
@@ -4391,13 +7413,13 @@ export interface CsiDriverOptions {
  *
  * @schema io.k8s.api.storage.v1beta1.CSIDriverList
  */
-export interface CsiDriverListOptions {
+export interface KubeCsiDriverListV1Beta1Props {
   /**
    * items is the list of CSIDriver
    *
    * @schema io.k8s.api.storage.v1beta1.CSIDriverList#items
    */
-  readonly items: CsiDriver[];
+  readonly items: KubeCsiDriverV1Beta1Props[];
 
   /**
    * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -4413,7 +7435,7 @@ export interface CsiDriverListOptions {
  *
  * @schema io.k8s.api.storage.v1beta1.CSINode
  */
-export interface CsiNodeOptions {
+export interface KubeCsiNodeV1Beta1Props {
   /**
    * metadata.name must be the Kubernetes node name.
    *
@@ -4435,13 +7457,13 @@ export interface CsiNodeOptions {
  *
  * @schema io.k8s.api.storage.v1beta1.CSINodeList
  */
-export interface CsiNodeListOptions {
+export interface KubeCsiNodeListV1Beta1Props {
   /**
    * items is the list of CSINode
    *
    * @schema io.k8s.api.storage.v1beta1.CSINodeList#items
    */
-  readonly items: CsiNode[];
+  readonly items: KubeCsiNodeV1Beta1Props[];
 
   /**
    * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -4453,11 +7475,146 @@ export interface CsiNodeListOptions {
 }
 
 /**
+ * StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.
+
+StorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.
+ *
+ * @schema io.k8s.api.storage.v1beta1.StorageClass
+ */
+export interface KubeStorageClassV1Beta1Props {
+  /**
+   * AllowVolumeExpansion shows whether the storage class allow volume expand
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#allowVolumeExpansion
+   */
+  readonly allowVolumeExpansion?: boolean;
+
+  /**
+   * Restrict the node topologies where volumes can be dynamically provisioned. Each volume plugin defines its own supported topology specifications. An empty TopologySelectorTerm list means there is no topology restriction. This field is only honored by servers that enable the VolumeScheduling feature.
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#allowedTopologies
+   */
+  readonly allowedTopologies?: TopologySelectorTerm[];
+
+  /**
+   * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Dynamically provisioned PersistentVolumes of this storage class are created with these mountOptions, e.g. ["ro", "soft"]. Not validated - mount of the PVs will simply fail if one is invalid.
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#mountOptions
+   */
+  readonly mountOptions?: string[];
+
+  /**
+   * Parameters holds the parameters for the provisioner that should create volumes of this storage class.
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#parameters
+   */
+  readonly parameters?: { [key: string]: string };
+
+  /**
+   * Provisioner indicates the type of the provisioner.
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#provisioner
+   */
+  readonly provisioner: string;
+
+  /**
+   * Dynamically provisioned PersistentVolumes of this storage class are created with this reclaimPolicy. Defaults to Delete.
+   *
+   * @default Delete.
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#reclaimPolicy
+   */
+  readonly reclaimPolicy?: string;
+
+  /**
+   * VolumeBindingMode indicates how PersistentVolumeClaims should be provisioned and bound.  When unset, VolumeBindingImmediate is used. This field is only honored by servers that enable the VolumeScheduling feature.
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClass#volumeBindingMode
+   */
+  readonly volumeBindingMode?: string;
+
+}
+
+/**
+ * StorageClassList is a collection of storage classes.
+ *
+ * @schema io.k8s.api.storage.v1beta1.StorageClassList
+ */
+export interface KubeStorageClassListV1Beta1Props {
+  /**
+   * Items is the list of StorageClasses
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClassList#items
+   */
+  readonly items: KubeStorageClassV1Beta1Props[];
+
+  /**
+   * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1beta1.StorageClassList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * VolumeAttachment captures the intent to attach or detach the specified volume to/from the specified node.
+
+VolumeAttachment objects are non-namespaced.
+ *
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachment
+ */
+export interface KubeVolumeAttachmentV1Beta1Props {
+  /**
+   * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachment#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes system.
+   *
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachment#spec
+   */
+  readonly spec: VolumeAttachmentSpec;
+
+}
+
+/**
+ * VolumeAttachmentList is a collection of VolumeAttachment objects.
+ *
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentList
+ */
+export interface KubeVolumeAttachmentListV1Beta1Props {
+  /**
+   * Items is the list of VolumeAttachments
+   *
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentList#items
+   */
+  readonly items: KubeVolumeAttachmentV1Beta1Props[];
+
+  /**
+   * Standard list metadata More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+   *
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
  * CustomResourceDefinition represents a resource that should be exposed on the API server.  Its name MUST be in the format <.spec.name>.<.spec.group>.
  *
  * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinition
  */
-export interface CustomResourceDefinitionOptions {
+export interface KubeCustomResourceDefinitionV1Beta1Props {
   /**
    * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinition#metadata
    */
@@ -4477,13 +7634,13 @@ export interface CustomResourceDefinitionOptions {
  *
  * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinitionList
  */
-export interface CustomResourceDefinitionListOptions {
+export interface KubeCustomResourceDefinitionListV1Beta1Props {
   /**
    * Items individual CustomResourceDefinitions
    *
    * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinitionList#items
    */
-  readonly items: CustomResourceDefinition[];
+  readonly items: KubeCustomResourceDefinitionV1Beta1Props[];
 
   /**
    * @schema io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1beta1.CustomResourceDefinitionList#metadata
@@ -4497,7 +7654,7 @@ export interface CustomResourceDefinitionListOptions {
  *
  * @schema io.k8s.apimachinery.pkg.apis.meta.v1.Status
  */
-export interface StatusOptions {
+export interface KubeStatusProps {
   /**
    * Suggested HTTP return code for this status, 0 if not set.
    *
@@ -4540,7 +7697,7 @@ export interface StatusOptions {
  *
  * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIService
  */
-export interface ApiServiceOptions {
+export interface KubeApiServiceProps {
   /**
    * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIService#metadata
    */
@@ -4560,14 +7717,52 @@ export interface ApiServiceOptions {
  *
  * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceList
  */
-export interface ApiServiceListOptions {
+export interface KubeApiServiceListProps {
   /**
    * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceList#items
    */
-  readonly items: ApiService[];
+  readonly items: KubeApiServiceProps[];
 
   /**
    * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceList#metadata
+   */
+  readonly metadata?: ListMeta;
+
+}
+
+/**
+ * APIService represents a server for a particular GroupVersion. Name must be "version.group".
+ *
+ * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIService
+ */
+export interface KubeApiServiceV1Beta1Props {
+  /**
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIService#metadata
+   */
+  readonly metadata?: ObjectMeta;
+
+  /**
+   * Spec contains information for locating and communicating with a server
+   *
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIService#spec
+   */
+  readonly spec?: ApiServiceSpec;
+
+}
+
+/**
+ * APIServiceList is a list of APIService objects.
+ *
+ * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceList
+ */
+export interface KubeApiServiceListV1Beta1Props {
+  /**
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceList#items
+   */
+  readonly items: KubeApiServiceV1Beta1Props[];
+
+  /**
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceList#metadata
    */
   readonly metadata?: ListMeta;
 
@@ -5059,14 +8254,14 @@ export interface RawExtension {
 /**
  * DaemonSetSpec is the specification of a daemon set.
  *
- * @schema io.k8s.api.apps.v1.DaemonSetSpec
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec
  */
 export interface DaemonSetSpec {
   /**
    * The minimum number of seconds for which a newly created DaemonSet pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).
    *
    * @default 0 (pod will be considered available as soon as it is ready).
-   * @schema io.k8s.api.apps.v1.DaemonSetSpec#minReadySeconds
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#minReadySeconds
    */
   readonly minReadySeconds?: number;
 
@@ -5074,28 +8269,35 @@ export interface DaemonSetSpec {
    * The number of old history to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
    *
    * @default 10.
-   * @schema io.k8s.api.apps.v1.DaemonSetSpec#revisionHistoryLimit
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#revisionHistoryLimit
    */
   readonly revisionHistoryLimit?: number;
 
   /**
-   * A label query over pods that are managed by the daemon set. Must match in order to be controlled. It must match the pod template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+   * A label query over pods that are managed by the daemon set. Must match in order to be controlled. If empty, defaulted to labels on Pod template. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
    *
-   * @schema io.k8s.api.apps.v1.DaemonSetSpec#selector
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#selector
    */
-  readonly selector: LabelSelector;
+  readonly selector?: LabelSelector;
 
   /**
    * An object that describes the pod that will be created. The DaemonSet will create exactly one copy of this pod on every node that matches the template's node selector (or on every node if no node selector is specified). More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
    *
-   * @schema io.k8s.api.apps.v1.DaemonSetSpec#template
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#template
    */
   readonly template: PodTemplateSpec;
 
   /**
+   * DEPRECATED. A sequence number representing a specific generation of the template. Populated by the system. It can be set only during the creation.
+   *
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#templateGeneration
+   */
+  readonly templateGeneration?: number;
+
+  /**
    * An update strategy to replace existing DaemonSet pods with new pods.
    *
-   * @schema io.k8s.api.apps.v1.DaemonSetSpec#updateStrategy
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetSpec#updateStrategy
    */
   readonly updateStrategy?: DaemonSetUpdateStrategy;
 
@@ -5104,21 +8306,21 @@ export interface DaemonSetSpec {
 /**
  * DeploymentSpec is the specification of the desired behavior of the Deployment.
  *
- * @schema io.k8s.api.apps.v1.DeploymentSpec
+ * @schema io.k8s.api.apps.v1beta2.DeploymentSpec
  */
 export interface DeploymentSpec {
   /**
    * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
    *
    * @default 0 (pod will be considered available as soon as it is ready)
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#minReadySeconds
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#minReadySeconds
    */
   readonly minReadySeconds?: number;
 
   /**
    * Indicates that the deployment is paused.
    *
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#paused
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#paused
    */
   readonly paused?: boolean;
 
@@ -5126,7 +8328,7 @@ export interface DeploymentSpec {
    * The maximum time in seconds for a deployment to make progress before it is considered to be failed. The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
    *
    * @default 600s.
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#progressDeadlineSeconds
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#progressDeadlineSeconds
    */
   readonly progressDeadlineSeconds?: number;
 
@@ -5134,7 +8336,7 @@ export interface DeploymentSpec {
    * Number of desired pods. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
    *
    * @default 1.
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#replicas
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#replicas
    */
   readonly replicas?: number;
 
@@ -5142,28 +8344,28 @@ export interface DeploymentSpec {
    * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
    *
    * @default 10.
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#revisionHistoryLimit
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#revisionHistoryLimit
    */
   readonly revisionHistoryLimit?: number;
 
   /**
    * Label selector for pods. Existing ReplicaSets whose pods are selected by this will be the ones affected by this deployment. It must match the pod template's labels.
    *
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#selector
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#selector
    */
   readonly selector: LabelSelector;
 
   /**
    * The deployment strategy to use to replace existing pods with new ones.
    *
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#strategy
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#strategy
    */
   readonly strategy?: DeploymentStrategy;
 
   /**
    * Template describes the pods that will be created.
    *
-   * @schema io.k8s.api.apps.v1.DeploymentSpec#template
+   * @schema io.k8s.api.apps.v1beta2.DeploymentSpec#template
    */
   readonly template: PodTemplateSpec;
 
@@ -5172,14 +8374,14 @@ export interface DeploymentSpec {
 /**
  * ReplicaSetSpec is the specification of a ReplicaSet.
  *
- * @schema io.k8s.api.apps.v1.ReplicaSetSpec
+ * @schema io.k8s.api.extensions.v1beta1.ReplicaSetSpec
  */
 export interface ReplicaSetSpec {
   /**
    * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
    *
    * @default 0 (pod will be considered available as soon as it is ready)
-   * @schema io.k8s.api.apps.v1.ReplicaSetSpec#minReadySeconds
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetSpec#minReadySeconds
    */
   readonly minReadySeconds?: number;
 
@@ -5187,21 +8389,21 @@ export interface ReplicaSetSpec {
    * Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
    *
    * @default 1. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
-   * @schema io.k8s.api.apps.v1.ReplicaSetSpec#replicas
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetSpec#replicas
    */
   readonly replicas?: number;
 
   /**
-   * Selector is a label query over pods that should match the replica count. Label keys and values that must match in order to be controlled by this replica set. It must match the pod template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
+   * Selector is a label query over pods that should match the replica count. If the selector is empty, it is defaulted to the labels present on the pod template. Label keys and values that must match in order to be controlled by this replica set. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
    *
-   * @schema io.k8s.api.apps.v1.ReplicaSetSpec#selector
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetSpec#selector
    */
-  readonly selector: LabelSelector;
+  readonly selector?: LabelSelector;
 
   /**
    * Template is the object that describes the pod that will be created if insufficient replicas are detected. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
    *
-   * @schema io.k8s.api.apps.v1.ReplicaSetSpec#template
+   * @schema io.k8s.api.extensions.v1beta1.ReplicaSetSpec#template
    */
   readonly template?: PodTemplateSpec;
 
@@ -5210,64 +8412,64 @@ export interface ReplicaSetSpec {
 /**
  * A StatefulSetSpec is the specification of a StatefulSet.
  *
- * @schema io.k8s.api.apps.v1.StatefulSetSpec
+ * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec
  */
 export interface StatefulSetSpec {
   /**
    * podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (pod-0, then pod-1, etc) and the controller will wait until each pod is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#podManagementPolicy
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#podManagementPolicy
    */
   readonly podManagementPolicy?: string;
 
   /**
    * replicas is the desired number of replicas of the given Template. These are replicas in the sense that they are instantiations of the same Template, but individual replicas also have a consistent identity. If unspecified, defaults to 1.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#replicas
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#replicas
    */
   readonly replicas?: number;
 
   /**
    * revisionHistoryLimit is the maximum number of revisions that will be maintained in the StatefulSet's revision history. The revision history consists of all revisions not represented by a currently applied StatefulSetSpec version. The default value is 10.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#revisionHistoryLimit
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#revisionHistoryLimit
    */
   readonly revisionHistoryLimit?: number;
 
   /**
    * selector is a label query over pods that should match the replica count. It must match the pod template's labels. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#selector
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#selector
    */
   readonly selector: LabelSelector;
 
   /**
    * serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: pod-specific-string.serviceName.default.svc.cluster.local where "pod-specific-string" is managed by the StatefulSet controller.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#serviceName
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#serviceName
    */
   readonly serviceName: string;
 
   /**
    * template is the object that describes the pod that will be created if insufficient replicas are detected. Each pod stamped out by the StatefulSet will fulfill this Template, but have a unique identity from the rest of the StatefulSet.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#template
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#template
    */
   readonly template: PodTemplateSpec;
 
   /**
    * updateStrategy indicates the StatefulSetUpdateStrategy that will be employed to update Pods in the StatefulSet when a revision is made to Template.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#updateStrategy
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#updateStrategy
    */
   readonly updateStrategy?: StatefulSetUpdateStrategy;
 
   /**
    * volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a pod. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetSpec#volumeClaimTemplates
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetSpec#volumeClaimTemplates
    */
-  readonly volumeClaimTemplates?: PersistentVolumeClaim[];
+  readonly volumeClaimTemplates?: KubePersistentVolumeClaimProps[];
 
 }
 
@@ -5311,20 +8513,20 @@ export interface AuditSinkSpec {
 /**
  * TokenReviewSpec is a description of the token authentication request.
  *
- * @schema io.k8s.api.authentication.v1.TokenReviewSpec
+ * @schema io.k8s.api.authentication.v1beta1.TokenReviewSpec
  */
 export interface TokenReviewSpec {
   /**
    * Audiences is a list of the identifiers that the resource server presented with the token identifies as. Audience-aware token authenticators will verify that the token was intended for at least one of the audiences in this list. If no audiences are provided, the audience will default to the audience of the Kubernetes apiserver.
    *
-   * @schema io.k8s.api.authentication.v1.TokenReviewSpec#audiences
+   * @schema io.k8s.api.authentication.v1beta1.TokenReviewSpec#audiences
    */
   readonly audiences?: string[];
 
   /**
    * Token is the opaque bearer token.
    *
-   * @schema io.k8s.api.authentication.v1.TokenReviewSpec#token
+   * @schema io.k8s.api.authentication.v1beta1.TokenReviewSpec#token
    */
   readonly token?: string;
 
@@ -5333,48 +8535,48 @@ export interface TokenReviewSpec {
 /**
  * SubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
  *
- * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec
+ * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec
  */
 export interface SubjectAccessReviewSpec {
   /**
    * Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here.
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#extra
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#extra
    */
   readonly extra?: { [key: string]: string[] };
 
   /**
    * Groups is the groups you're testing for.
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#groups
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#group
    */
-  readonly groups?: string[];
+  readonly group?: string[];
 
   /**
    * NonResourceAttributes describes information for a non-resource access request
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#nonResourceAttributes
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#nonResourceAttributes
    */
   readonly nonResourceAttributes?: NonResourceAttributes;
 
   /**
    * ResourceAuthorizationAttributes describes information for a resource access request
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#resourceAttributes
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#resourceAttributes
    */
   readonly resourceAttributes?: ResourceAttributes;
 
   /**
    * UID information about the requesting user.
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#uid
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#uid
    */
   readonly uid?: string;
 
   /**
-   * User is the user you're testing for. If you specify "User" but not "Groups", then is it interpreted as "What if User were not a member of any groups
+   * User is the user you're testing for. If you specify "User" but not "Group", then is it interpreted as "What if User were not a member of any groups
    *
-   * @schema io.k8s.api.authorization.v1.SubjectAccessReviewSpec#user
+   * @schema io.k8s.api.authorization.v1beta1.SubjectAccessReviewSpec#user
    */
   readonly user?: string;
 
@@ -5383,33 +8585,33 @@ export interface SubjectAccessReviewSpec {
 /**
  * SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
  *
- * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReviewSpec
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReviewSpec
  */
 export interface SelfSubjectAccessReviewSpec {
   /**
    * NonResourceAttributes describes information for a non-resource access request
    *
-   * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReviewSpec#nonResourceAttributes
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReviewSpec#nonResourceAttributes
    */
   readonly nonResourceAttributes?: NonResourceAttributes;
 
   /**
    * ResourceAuthorizationAttributes describes information for a resource access request
    *
-   * @schema io.k8s.api.authorization.v1.SelfSubjectAccessReviewSpec#resourceAttributes
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectAccessReviewSpec#resourceAttributes
    */
   readonly resourceAttributes?: ResourceAttributes;
 
 }
 
 /**
- * @schema io.k8s.api.authorization.v1.SelfSubjectRulesReviewSpec
+ * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReviewSpec
  */
 export interface SelfSubjectRulesReviewSpec {
   /**
    * Namespace to evaluate rules for. Required.
    *
-   * @schema io.k8s.api.authorization.v1.SelfSubjectRulesReviewSpec#namespace
+   * @schema io.k8s.api.authorization.v1beta1.SelfSubjectRulesReviewSpec#namespace
    */
   readonly namespace?: string;
 
@@ -5519,50 +8721,48 @@ export interface JobSpec {
 /**
  * CronJobSpec describes how the job execution will look like and when it will actually run.
  *
- * @schema io.k8s.api.batch.v1beta1.CronJobSpec
+ * @schema io.k8s.api.batch.v2alpha1.CronJobSpec
  */
 export interface CronJobSpec {
   /**
    * Specifies how to treat concurrent executions of a Job. Valid values are: - "Allow" (default): allows CronJobs to run concurrently; - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet; - "Replace": cancels currently running job and replaces it with a new one
    *
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#concurrencyPolicy
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#concurrencyPolicy
    */
   readonly concurrencyPolicy?: string;
 
   /**
-   * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
+   * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
    *
-   * @default 1.
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#failedJobsHistoryLimit
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#failedJobsHistoryLimit
    */
   readonly failedJobsHistoryLimit?: number;
 
   /**
    * Specifies the job that will be created when executing a CronJob.
    *
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#jobTemplate
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#jobTemplate
    */
   readonly jobTemplate: JobTemplateSpec;
 
   /**
    * The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
    *
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#schedule
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#schedule
    */
   readonly schedule: string;
 
   /**
    * Optional deadline in seconds for starting the job if it misses scheduled time for any reason.  Missed jobs executions will be counted as failed ones.
    *
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#startingDeadlineSeconds
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#startingDeadlineSeconds
    */
   readonly startingDeadlineSeconds?: number;
 
   /**
-   * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 3.
+   * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
    *
-   * @default 3.
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#successfulJobsHistoryLimit
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#successfulJobsHistoryLimit
    */
   readonly successfulJobsHistoryLimit?: number;
 
@@ -5570,7 +8770,7 @@ export interface CronJobSpec {
    * This flag tells the controller to suspend subsequent executions, it does not apply to already started executions.  Defaults to false.
    *
    * @default false.
-   * @schema io.k8s.api.batch.v1beta1.CronJobSpec#suspend
+   * @schema io.k8s.api.batch.v2alpha1.CronJobSpec#suspend
    */
   readonly suspend?: boolean;
 
@@ -5630,41 +8830,41 @@ export interface CertificateSigningRequestSpec {
 /**
  * LeaseSpec is a specification of a Lease.
  *
- * @schema io.k8s.api.coordination.v1.LeaseSpec
+ * @schema io.k8s.api.coordination.v1beta1.LeaseSpec
  */
 export interface LeaseSpec {
   /**
    * acquireTime is a time when the current lease was acquired.
    *
-   * @schema io.k8s.api.coordination.v1.LeaseSpec#acquireTime
+   * @schema io.k8s.api.coordination.v1beta1.LeaseSpec#acquireTime
    */
   readonly acquireTime?: Date;
 
   /**
    * holderIdentity contains the identity of the holder of a current lease.
    *
-   * @schema io.k8s.api.coordination.v1.LeaseSpec#holderIdentity
+   * @schema io.k8s.api.coordination.v1beta1.LeaseSpec#holderIdentity
    */
   readonly holderIdentity?: string;
 
   /**
    * leaseDurationSeconds is a duration that candidates for a lease need to wait to force acquire it. This is measure against time of last observed RenewTime.
    *
-   * @schema io.k8s.api.coordination.v1.LeaseSpec#leaseDurationSeconds
+   * @schema io.k8s.api.coordination.v1beta1.LeaseSpec#leaseDurationSeconds
    */
   readonly leaseDurationSeconds?: number;
 
   /**
    * leaseTransitions is the number of transitions of a lease between holders.
    *
-   * @schema io.k8s.api.coordination.v1.LeaseSpec#leaseTransitions
+   * @schema io.k8s.api.coordination.v1beta1.LeaseSpec#leaseTransitions
    */
   readonly leaseTransitions?: number;
 
   /**
    * renewTime is a time when the current holder of a lease has last updated the lease.
    *
-   * @schema io.k8s.api.coordination.v1.LeaseSpec#renewTime
+   * @schema io.k8s.api.coordination.v1beta1.LeaseSpec#renewTime
    */
   readonly renewTime?: Date;
 
@@ -5802,29 +9002,29 @@ export interface EndpointSubset {
 /**
  * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
  *
- * @schema io.k8s.api.core.v1.EventSeries
+ * @schema io.k8s.api.events.v1beta1.EventSeries
  */
 export interface EventSeries {
   /**
    * Number of occurrences in this series up to the last heartbeat time
    *
-   * @schema io.k8s.api.core.v1.EventSeries#count
+   * @schema io.k8s.api.events.v1beta1.EventSeries#count
    */
-  readonly count?: number;
+  readonly count: number;
 
   /**
-   * Time of the last occurrence observed
+   * Time when last Event from the series was seen before last heartbeat.
    *
-   * @schema io.k8s.api.core.v1.EventSeries#lastObservedTime
+   * @schema io.k8s.api.events.v1beta1.EventSeries#lastObservedTime
    */
-  readonly lastObservedTime?: Date;
+  readonly lastObservedTime: Date;
 
   /**
-   * State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18
+   * Information whether this series is ongoing or finished. Deprecated. Planned removal for 1.18
    *
-   * @schema io.k8s.api.core.v1.EventSeries#state
+   * @schema io.k8s.api.events.v1beta1.EventSeries#state
    */
-  readonly state?: string;
+  readonly state: string;
 
 }
 
@@ -6891,6 +10091,21 @@ Examples: e.g. "foo/*" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "
 }
 
 /**
+ * RuntimeClassSpec is a specification of a RuntimeClass. It contains parameters that are required to describe the RuntimeClass to the Container Runtime Interface (CRI) implementation, as well as any other components that need to understand how the pod will be run. The RuntimeClassSpec is immutable.
+ *
+ * @schema io.k8s.api.node.v1alpha1.RuntimeClassSpec
+ */
+export interface RuntimeClassSpec {
+  /**
+   * RuntimeHandler specifies the underlying runtime and configuration that the CRI implementation will use to handle pods of this class. The possible values are specific to the node & CRI configuration.  It is assumed that all handlers are available on every node, and handlers of the same name are equivalent on every node. For example, a handler called "runc" might specify that the runc OCI runtime (using native Linux containers) will be used to run the containers in a pod. The RuntimeHandler must conform to the DNS Label (RFC 1123) requirements and is immutable.
+   *
+   * @schema io.k8s.api.node.v1alpha1.RuntimeClassSpec#runtimeHandler
+   */
+  readonly runtimeHandler: string;
+
+}
+
+/**
  * DeleteOptions may be provided when deleting an API object.
  *
  * @schema io.k8s.apimachinery.pkg.apis.meta.v1.DeleteOptions
@@ -6980,13 +10195,13 @@ export interface PodDisruptionBudgetSpec {
 /**
  * AggregationRule describes how to locate ClusterRoles to aggregate into the ClusterRole
  *
- * @schema io.k8s.api.rbac.v1.AggregationRule
+ * @schema io.k8s.api.rbac.v1beta1.AggregationRule
  */
 export interface AggregationRule {
   /**
    * ClusterRoleSelectors holds a list of selectors which will be used to find ClusterRoles and create the rules. If any of the selectors match, then the ClusterRole's permissions will be added
    *
-   * @schema io.k8s.api.rbac.v1.AggregationRule#clusterRoleSelectors
+   * @schema io.k8s.api.rbac.v1beta1.AggregationRule#clusterRoleSelectors
    */
   readonly clusterRoleSelectors?: LabelSelector[];
 
@@ -6995,41 +10210,41 @@ export interface AggregationRule {
 /**
  * PolicyRule holds information that describes a policy rule, but does not contain information about who the rule applies to or which namespace the rule applies to.
  *
- * @schema io.k8s.api.rbac.v1.PolicyRule
+ * @schema io.k8s.api.rbac.v1beta1.PolicyRule
  */
 export interface PolicyRule {
   /**
    * APIGroups is the name of the APIGroup that contains the resources.  If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.
    *
-   * @schema io.k8s.api.rbac.v1.PolicyRule#apiGroups
+   * @schema io.k8s.api.rbac.v1beta1.PolicyRule#apiGroups
    */
   readonly apiGroups?: string[];
 
   /**
    * NonResourceURLs is a set of partial urls that a user should have access to.  *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"),  but not both.
    *
-   * @schema io.k8s.api.rbac.v1.PolicyRule#nonResourceURLs
+   * @schema io.k8s.api.rbac.v1beta1.PolicyRule#nonResourceURLs
    */
   readonly nonResourceURLs?: string[];
 
   /**
    * ResourceNames is an optional white list of names that the rule applies to.  An empty set means that everything is allowed.
    *
-   * @schema io.k8s.api.rbac.v1.PolicyRule#resourceNames
+   * @schema io.k8s.api.rbac.v1beta1.PolicyRule#resourceNames
    */
   readonly resourceNames?: string[];
 
   /**
-   * Resources is a list of resources this rule applies to.  ResourceAll represents all resources.
+   * Resources is a list of resources this rule applies to.  '*' represents all resources in the specified apiGroups. '_/foo' represents the subresource 'foo' for all resources in the specified apiGroups.
    *
-   * @schema io.k8s.api.rbac.v1.PolicyRule#resources
+   * @schema io.k8s.api.rbac.v1beta1.PolicyRule#resources
    */
   readonly resources?: string[];
 
   /**
    * Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.  VerbAll represents all kinds.
    *
-   * @schema io.k8s.api.rbac.v1.PolicyRule#verbs
+   * @schema io.k8s.api.rbac.v1beta1.PolicyRule#verbs
    */
   readonly verbs: string[];
 
@@ -7038,27 +10253,27 @@ export interface PolicyRule {
 /**
  * RoleRef contains information that points to the role being used
  *
- * @schema io.k8s.api.rbac.v1.RoleRef
+ * @schema io.k8s.api.rbac.v1beta1.RoleRef
  */
 export interface RoleRef {
   /**
    * APIGroup is the group for the resource being referenced
    *
-   * @schema io.k8s.api.rbac.v1.RoleRef#apiGroup
+   * @schema io.k8s.api.rbac.v1beta1.RoleRef#apiGroup
    */
   readonly apiGroup: string;
 
   /**
    * Kind is the type of resource being referenced
    *
-   * @schema io.k8s.api.rbac.v1.RoleRef#kind
+   * @schema io.k8s.api.rbac.v1beta1.RoleRef#kind
    */
   readonly kind: string;
 
   /**
    * Name is the name of resource being referenced
    *
-   * @schema io.k8s.api.rbac.v1.RoleRef#name
+   * @schema io.k8s.api.rbac.v1beta1.RoleRef#name
    */
   readonly name: string;
 
@@ -7067,35 +10282,35 @@ export interface RoleRef {
 /**
  * Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference, or a value for non-objects such as user and group names.
  *
- * @schema io.k8s.api.rbac.v1.Subject
+ * @schema io.k8s.api.rbac.v1beta1.Subject
  */
 export interface Subject {
   /**
    * APIGroup holds the API group of the referenced subject. Defaults to "" for ServiceAccount subjects. Defaults to "rbac.authorization.k8s.io" for User and Group subjects.
    *
    * @default for ServiceAccount subjects. Defaults to "rbac.authorization.k8s.io" for User and Group subjects.
-   * @schema io.k8s.api.rbac.v1.Subject#apiGroup
+   * @schema io.k8s.api.rbac.v1beta1.Subject#apiGroup
    */
   readonly apiGroup?: string;
 
   /**
    * Kind of object being referenced. Values defined by this API group are "User", "Group", and "ServiceAccount". If the Authorizer does not recognized the kind value, the Authorizer should report an error.
    *
-   * @schema io.k8s.api.rbac.v1.Subject#kind
+   * @schema io.k8s.api.rbac.v1beta1.Subject#kind
    */
   readonly kind: string;
 
   /**
    * Name of the object being referenced.
    *
-   * @schema io.k8s.api.rbac.v1.Subject#name
+   * @schema io.k8s.api.rbac.v1beta1.Subject#name
    */
   readonly name: string;
 
   /**
    * Namespace of the referenced object.  If the object kind is non-namespace, such as "User" or "Group", and this value is not empty the Authorizer should report an error.
    *
-   * @schema io.k8s.api.rbac.v1.Subject#namespace
+   * @schema io.k8s.api.rbac.v1beta1.Subject#namespace
    */
   readonly namespace?: string;
 
@@ -7162,27 +10377,27 @@ export interface TopologySelectorTerm {
 /**
  * VolumeAttachmentSpec is the specification of a VolumeAttachment request.
  *
- * @schema io.k8s.api.storage.v1.VolumeAttachmentSpec
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSpec
  */
 export interface VolumeAttachmentSpec {
   /**
    * Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().
    *
-   * @schema io.k8s.api.storage.v1.VolumeAttachmentSpec#attacher
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSpec#attacher
    */
   readonly attacher: string;
 
   /**
    * The node that the volume should be attached to.
    *
-   * @schema io.k8s.api.storage.v1.VolumeAttachmentSpec#nodeName
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSpec#nodeName
    */
   readonly nodeName: string;
 
   /**
    * Source represents the volume that should be attached.
    *
-   * @schema io.k8s.api.storage.v1.VolumeAttachmentSpec#source
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSpec#source
    */
   readonly source: VolumeAttachmentSource;
 
@@ -7360,55 +10575,55 @@ export interface StatusDetails {
 /**
  * APIServiceSpec contains information for locating and communicating with a server. Only https is supported, though you are able to disable certificate verification.
  *
- * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec
+ * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec
  */
 export interface ApiServiceSpec {
   /**
    * CABundle is a PEM encoded CA bundle which will be used to validate an API server's serving certificate. If unspecified, system trust roots on the apiserver are used.
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#caBundle
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#caBundle
    */
   readonly caBundle?: string;
 
   /**
    * Group is the API group name this server hosts
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#group
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#group
    */
   readonly group?: string;
 
   /**
    * GroupPriorityMininum is the priority this group should have at least. Higher priority means that the group is preferred by clients over lower priority ones. Note that other versions of this group might specify even higher GroupPriorityMininum values such that the whole group gets a higher priority. The primary sort is based on GroupPriorityMinimum, ordered highest number to lowest (20 before 10). The secondary sort is based on the alphabetical comparison of the name of the object.  (v1.bar before v1.foo) We'd recommend something like: *.k8s.io (except extensions) at 18000 and PaaSes (OpenShift, Deis) are recommended to be in the 2000s
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#groupPriorityMinimum
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#groupPriorityMinimum
    */
   readonly groupPriorityMinimum: number;
 
   /**
    * InsecureSkipTLSVerify disables TLS certificate verification when communicating with this server. This is strongly discouraged.  You should use the CABundle instead.
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#insecureSkipTLSVerify
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#insecureSkipTLSVerify
    */
   readonly insecureSkipTLSVerify?: boolean;
 
   /**
    * Service is a reference to the service for this API server.  It must communicate on port 443 If the Service is nil, that means the handling for the API groupversion is handled locally on this server. The call will simply delegate to the normal handler chain to be fulfilled.
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#service
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#service
    */
   readonly service: ServiceReference;
 
   /**
    * Version is the API version this server hosts.  For example, "v1"
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#version
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#version
    */
   readonly version?: string;
 
   /**
    * VersionPriority controls the ordering of this API version inside of its group.  Must be greater than zero. The primary sort is based on VersionPriority, ordered highest to lowest (20 before 10). Since it's inside of a group, the number can be small, probably in the 10s. In case of equal version priorities, the version string will be used to compute the order inside a group. If the version string is "kube-like", it will sort above non "kube-like" version strings, which are ordered lexicographically. "Kube-like" versions start with a "v", then are followed by a number (the major version), then optionally the string "alpha" or "beta" and another number (the minor version). These are sorted first by GA > beta > alpha (where GA is a version with no suffix such as beta or alpha), and then by comparing major version, then minor version. An example sorted list of versions: v10, v2, v1, v11beta2, v10beta3, v3beta1, v12alpha1, v11alpha2, foo1, foo10.
    *
-   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1.APIServiceSpec#versionPriority
+   * @schema io.k8s.kube-aggregator.pkg.apis.apiregistration.v1beta1.APIServiceSpec#versionPriority
    */
   readonly versionPriority: number;
 
@@ -7432,7 +10647,7 @@ export interface Initializers {
    *
    * @schema io.k8s.apimachinery.pkg.apis.meta.v1.Initializers#result
    */
-  readonly result?: Status;
+  readonly result?: KubeStatusProps;
 
 }
 
@@ -7644,23 +10859,21 @@ Depending on the enclosing object, subresources might not be allowed. Required.
 }
 
 /**
- * DaemonSetUpdateStrategy is a struct used to control the update strategy for a DaemonSet.
- *
- * @schema io.k8s.api.apps.v1.DaemonSetUpdateStrategy
+ * @schema io.k8s.api.extensions.v1beta1.DaemonSetUpdateStrategy
  */
 export interface DaemonSetUpdateStrategy {
   /**
    * Rolling update config params. Present only if type = "RollingUpdate".
    *
-   * @schema io.k8s.api.apps.v1.DaemonSetUpdateStrategy#rollingUpdate
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetUpdateStrategy#rollingUpdate
    */
   readonly rollingUpdate?: RollingUpdateDaemonSet;
 
   /**
-   * Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is RollingUpdate.
+   * Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is OnDelete.
    *
-   * @default RollingUpdate.
-   * @schema io.k8s.api.apps.v1.DaemonSetUpdateStrategy#type
+   * @default OnDelete.
+   * @schema io.k8s.api.extensions.v1beta1.DaemonSetUpdateStrategy#type
    */
   readonly type?: string;
 
@@ -7669,13 +10882,13 @@ export interface DaemonSetUpdateStrategy {
 /**
  * DeploymentStrategy describes how to replace existing pods with new ones.
  *
- * @schema io.k8s.api.apps.v1.DeploymentStrategy
+ * @schema io.k8s.api.apps.v1beta2.DeploymentStrategy
  */
 export interface DeploymentStrategy {
   /**
    * Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate.
    *
-   * @schema io.k8s.api.apps.v1.DeploymentStrategy#rollingUpdate
+   * @schema io.k8s.api.apps.v1beta2.DeploymentStrategy#rollingUpdate
    */
   readonly rollingUpdate?: RollingUpdateDeployment;
 
@@ -7683,7 +10896,7 @@ export interface DeploymentStrategy {
    * Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
    *
    * @default RollingUpdate.
-   * @schema io.k8s.api.apps.v1.DeploymentStrategy#type
+   * @schema io.k8s.api.apps.v1beta2.DeploymentStrategy#type
    */
   readonly type?: string;
 
@@ -7692,13 +10905,13 @@ export interface DeploymentStrategy {
 /**
  * StatefulSetUpdateStrategy indicates the strategy that the StatefulSet controller will use to perform updates. It includes any additional parameters necessary to perform the update for the indicated strategy.
  *
- * @schema io.k8s.api.apps.v1.StatefulSetUpdateStrategy
+ * @schema io.k8s.api.apps.v1beta2.StatefulSetUpdateStrategy
  */
 export interface StatefulSetUpdateStrategy {
   /**
    * RollingUpdate is used to communicate parameters when Type is RollingUpdateStatefulSetStrategyType.
    *
-   * @schema io.k8s.api.apps.v1.StatefulSetUpdateStrategy#rollingUpdate
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetUpdateStrategy#rollingUpdate
    */
   readonly rollingUpdate?: RollingUpdateStatefulSetStrategy;
 
@@ -7706,7 +10919,7 @@ export interface StatefulSetUpdateStrategy {
    * Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate.
    *
    * @default RollingUpdate.
-   * @schema io.k8s.api.apps.v1.StatefulSetUpdateStrategy#type
+   * @schema io.k8s.api.apps.v1beta2.StatefulSetUpdateStrategy#type
    */
   readonly type?: string;
 
@@ -7759,20 +10972,20 @@ export interface Webhook {
 /**
  * NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface
  *
- * @schema io.k8s.api.authorization.v1.NonResourceAttributes
+ * @schema io.k8s.api.authorization.v1beta1.NonResourceAttributes
  */
 export interface NonResourceAttributes {
   /**
    * Path is the URL path of the request
    *
-   * @schema io.k8s.api.authorization.v1.NonResourceAttributes#path
+   * @schema io.k8s.api.authorization.v1beta1.NonResourceAttributes#path
    */
   readonly path?: string;
 
   /**
    * Verb is the standard HTTP verb
    *
-   * @schema io.k8s.api.authorization.v1.NonResourceAttributes#verb
+   * @schema io.k8s.api.authorization.v1beta1.NonResourceAttributes#verb
    */
   readonly verb?: string;
 
@@ -7781,55 +10994,55 @@ export interface NonResourceAttributes {
 /**
  * ResourceAttributes includes the authorization attributes available for resource requests to the Authorizer interface
  *
- * @schema io.k8s.api.authorization.v1.ResourceAttributes
+ * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes
  */
 export interface ResourceAttributes {
   /**
    * Group is the API Group of the Resource.  "*" means all.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#group
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#group
    */
   readonly group?: string;
 
   /**
    * Name is the name of the resource being requested for a "get" or deleted for a "delete". "" (empty) means all.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#name
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#name
    */
   readonly name?: string;
 
   /**
    * Namespace is the namespace of the action being requested.  Currently, there is no distinction between no namespace and all namespaces "" (empty) is defaulted for LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#namespace
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#namespace
    */
   readonly namespace?: string;
 
   /**
    * Resource is one of the existing resource types.  "*" means all.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#resource
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#resource
    */
   readonly resource?: string;
 
   /**
    * Subresource is one of the existing resource types.  "" means none.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#subresource
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#subresource
    */
   readonly subresource?: string;
 
   /**
    * Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete, proxy.  "*" means all.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#verb
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#verb
    */
   readonly verb?: string;
 
   /**
    * Version is the API Version of the Resource.  "*" means all.
    *
-   * @schema io.k8s.api.authorization.v1.ResourceAttributes#version
+   * @schema io.k8s.api.authorization.v1beta1.ResourceAttributes#version
    */
   readonly version?: string;
 
@@ -7910,20 +11123,20 @@ export interface CrossVersionObjectReference {
 /**
  * JobTemplateSpec describes the data a Job should have when created from a template
  *
- * @schema io.k8s.api.batch.v1beta1.JobTemplateSpec
+ * @schema io.k8s.api.batch.v2alpha1.JobTemplateSpec
  */
 export interface JobTemplateSpec {
   /**
    * Standard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
    *
-   * @schema io.k8s.api.batch.v1beta1.JobTemplateSpec#metadata
+   * @schema io.k8s.api.batch.v2alpha1.JobTemplateSpec#metadata
    */
   readonly metadata?: ObjectMeta;
 
   /**
    * Specification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
    *
-   * @schema io.k8s.api.batch.v1beta1.JobTemplateSpec#spec
+   * @schema io.k8s.api.batch.v2alpha1.JobTemplateSpec#spec
    */
   readonly spec?: JobSpec;
 
@@ -10307,20 +13520,20 @@ export interface TopologySelectorLabelRequirement {
 /**
  * VolumeAttachmentSource represents a volume that should be attached. Right now only PersistenVolumes can be attached via external attacher, in future we may allow also inline volumes in pods. Exactly one member can be set.
  *
- * @schema io.k8s.api.storage.v1.VolumeAttachmentSource
+ * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSource
  */
 export interface VolumeAttachmentSource {
   /**
    * inlineVolumeSpec contains all the information necessary to attach a persistent volume defined by a pod's inline VolumeSource. This field is populated only for the CSIMigration feature. It contains translated fields from a pod's inline VolumeSource to a PersistentVolumeSpec. This field is alpha-level and is only honored by servers that enabled the CSIMigration feature.
    *
-   * @schema io.k8s.api.storage.v1.VolumeAttachmentSource#inlineVolumeSpec
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSource#inlineVolumeSpec
    */
   readonly inlineVolumeSpec?: PersistentVolumeSpec;
 
   /**
    * Name of the persistent volume to attach.
    *
-   * @schema io.k8s.api.storage.v1.VolumeAttachmentSource#persistentVolumeName
+   * @schema io.k8s.api.storage.v1beta1.VolumeAttachmentSource#persistentVolumeName
    */
   readonly persistentVolumeName?: string;
 
@@ -10693,13 +13906,13 @@ export interface LabelSelectorRequirement {
 /**
  * Spec to control the desired behavior of daemon set rolling update.
  *
- * @schema io.k8s.api.apps.v1.RollingUpdateDaemonSet
+ * @schema io.k8s.api.extensions.v1beta1.RollingUpdateDaemonSet
  */
 export interface RollingUpdateDaemonSet {
   /**
    * The maximum number of DaemonSet pods that can be unavailable during the update. Value can be an absolute number (ex: 5) or a percentage of total number of DaemonSet pods at the start of the update (ex: 10%). Absolute number is calculated from percentage by rounding up. This cannot be 0. Default value is 1. Example: when this is set to 30%, at most 30% of the total number of nodes that should be running the daemon pod (i.e. status.desiredNumberScheduled) can have their pods stopped for an update at any given time. The update starts by stopping at most 30% of those DaemonSet pods and then brings up new DaemonSet pods in their place. Once the new pods are available, it then proceeds onto other DaemonSet pods, thus ensuring that at least 70% of original number of DaemonSet pods are available at all times during the update.
    *
-   * @schema io.k8s.api.apps.v1.RollingUpdateDaemonSet#maxUnavailable
+   * @schema io.k8s.api.extensions.v1beta1.RollingUpdateDaemonSet#maxUnavailable
    */
   readonly maxUnavailable?: IntOrString;
 
@@ -10708,14 +13921,14 @@ export interface RollingUpdateDaemonSet {
 /**
  * Spec to control the desired behavior of rolling update.
  *
- * @schema io.k8s.api.apps.v1.RollingUpdateDeployment
+ * @schema io.k8s.api.apps.v1beta2.RollingUpdateDeployment
  */
 export interface RollingUpdateDeployment {
   /**
    * The maximum number of pods that can be scheduled above the desired number of pods. Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up. Defaults to 25%. Example: when this is set to 30%, the new ReplicaSet can be scaled up immediately when the rolling update starts, such that the total number of old and new pods do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be scaled up further, ensuring that total number of pods running at any time during the update is at most 130% of desired pods.
    *
    * @default 25%. Example: when this is set to 30%, the new ReplicaSet can be scaled up immediately when the rolling update starts, such that the total number of old and new pods do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be scaled up further, ensuring that total number of pods running at any time during the update is at most 130% of desired pods.
-   * @schema io.k8s.api.apps.v1.RollingUpdateDeployment#maxSurge
+   * @schema io.k8s.api.apps.v1beta2.RollingUpdateDeployment#maxSurge
    */
   readonly maxSurge?: IntOrString;
 
@@ -10723,7 +13936,7 @@ export interface RollingUpdateDeployment {
    * The maximum number of pods that can be unavailable during the update. Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is calculated from percentage by rounding down. This can not be 0 if MaxSurge is 0. Defaults to 25%. Example: when this is set to 30%, the old ReplicaSet can be scaled down to 70% of desired pods immediately when the rolling update starts. Once new pods are ready, old ReplicaSet can be scaled down further, followed by scaling up the new ReplicaSet, ensuring that the total number of pods available at all times during the update is at least 70% of desired pods.
    *
    * @default 25%. Example: when this is set to 30%, the old ReplicaSet can be scaled down to 70% of desired pods immediately when the rolling update starts. Once new pods are ready, old ReplicaSet can be scaled down further, followed by scaling up the new ReplicaSet, ensuring that the total number of pods available at all times during the update is at least 70% of desired pods.
-   * @schema io.k8s.api.apps.v1.RollingUpdateDeployment#maxUnavailable
+   * @schema io.k8s.api.apps.v1beta2.RollingUpdateDeployment#maxUnavailable
    */
   readonly maxUnavailable?: IntOrString;
 
@@ -10732,13 +13945,13 @@ export interface RollingUpdateDeployment {
 /**
  * RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType.
  *
- * @schema io.k8s.api.apps.v1.RollingUpdateStatefulSetStrategy
+ * @schema io.k8s.api.apps.v1beta2.RollingUpdateStatefulSetStrategy
  */
 export interface RollingUpdateStatefulSetStrategy {
   /**
    * Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
    *
-   * @schema io.k8s.api.apps.v1.RollingUpdateStatefulSetStrategy#partition
+   * @schema io.k8s.api.apps.v1beta2.RollingUpdateStatefulSetStrategy#partition
    */
   readonly partition?: number;
 
