@@ -1,0 +1,1 @@
+{"jobID":"5c4ca882-8b88-fd30-a3b1-9e04c22961b1","spec":{"type":"policy","cause":{"Message":"","User":"Kwangyoung Kim \u003cblackdog0403@gmail.com\u003e"},"spec":{"default:deployment/hello-cdk8s-podinfo3-deployment-5ad0dcdd":{"add":{"locked":"true","locked_msg":"","locked_user":"Kwangyoung Kim \u003cblackdog0403@gmail.com\u003e"},"remove":{}}}},"result":null}
